@@ -1,0 +1,36 @@
+#bottombar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 22.5px;
+    padding: 0 7px;
+    color: var(--text-color);
+    background-color: var(--bottombar-bg);
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.iconContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin: 0 3px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--bottombar-hover-bg);
+    }
+}
+
+.icon{
+    display: block;
+    height: 14px;
+    width: 14px;
+}

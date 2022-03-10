@@ -3,7 +3,7 @@ import styles from '../styles/Explorer.module.scss';
 const Explorer = () => {
     return (
         <div id={styles.explorer}>
-          hello
+          EXPLORER
         </div>
     );
 };

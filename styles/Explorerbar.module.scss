@@ -1,7 +1,38 @@
 #explorerbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
     width: 48px;
-    color: #fff;
     background-color: --sidebar-bg;
-    border: 1px solid black;
+    border-right: 1px solid var(--border);
+}
+
+.iconContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+
+    &.active::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 2.5px;
+        background-color: var(--accent-color);
+    }
+    &:hover svg{
+        fill: rgb(225, 228, 232);
+    }
+}
+
+.icon{
+    display: block;
+    height: 24px;
+    width: 24px;
 }
