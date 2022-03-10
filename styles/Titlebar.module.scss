@@ -1,0 +1,29 @@
+#titlebar {
+    display: flex;
+    align-items: center;
+    justify-content : center;
+    height: 30px;
+    padding: 0 0.5rem; 
+    background-color: var(--titlebar-bg);
+    color: #fff;
+    border-bottom: 1px solid #191d20;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.85rem;
+}
+
+#menu {
+    display: flex;
+    gap: 10px;
+    flex: 1 1;
+}
+
+#title {
+    flex: 1 1;
+    text-align: center;
+}
+
+#buttons {
+    flex: 1 1;
+    display: flex;
+    justify-content: flex-end;
+}
