@@ -56,7 +56,6 @@
 .folderOpen{
     flex-direction: column;
     overflow: hidden;
-    
 }
 
 .file{
@@ -69,7 +68,7 @@
     animation: slide 500ms;
 
     &:hover{
-        background-color: var(--bottombar-hover-bg);
+        background-color: var(--explorer-hover-bg);
     }
 }
 

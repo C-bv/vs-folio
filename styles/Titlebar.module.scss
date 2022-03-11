@@ -26,4 +26,13 @@
     flex: 1 1;
     display: flex;
     justify-content: flex-end;
+    gap: 8px;
+}
+
+.icon{
+    display: block;
+    fill: #fff;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
 }

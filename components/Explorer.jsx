@@ -56,7 +56,7 @@ const Explorer = () => {
 						style={folderOpen ? { transform: 'rotate(90deg)' } : { transform: 'rotate(0deg)' }}
 					/>
 					<div id={styles.headerTitle}>
-						<p>Vs Folio</p>
+						<p>Vs-Folio</p>
 					</div>
 				</div>
 				<div className={styles.folderOpen} style={folderOpen ? { display: 'flex' } : { display: 'none' }}>

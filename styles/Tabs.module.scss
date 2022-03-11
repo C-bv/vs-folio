@@ -1,0 +1,33 @@
+.tabs{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    padding: 0 10px;
+    color: var(--text-color);
+    background-color: var(--tab-bg);;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: var(--border);
+    font-size: 0.85rem;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: var(--tabs-active-bg);
+    }
+    &.active{
+        border-bottom: 0;
+        background-color: var(--tabs-active-bg);
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background-color: var(--accent-color);
+        }
+    }
+}

@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import WindowMinimizeIcon from "./icons/WindowMinimizeIcon";
+import WindowMaximizeIcon from "./icons/WindowMaximizeIcon";
+import WindowCloseIcon from "./icons/WindowCloseIcon";
 import styles from '../styles/Titlebar.module.scss';
 
 // TODO: add icons and current file
@@ -6,7 +9,7 @@ import styles from '../styles/Titlebar.module.scss';
 const Titlebar = () => {
 	return (
 		<>
-			<div id={styles.titlebar}> 
+			<div id={styles.titlebar}>
 				<div id={styles.menu}>
 					<Image
 						src="/vscode_icon.svg"
@@ -26,9 +29,9 @@ const Titlebar = () => {
 					<p>Charles Bouveret - Visual Studio Code</p>
 				</div>
 				<div id={styles.buttons}>
-					<p>Minimise</p>
-					<p>Window</p>
-					<p>Close</p>
+					<WindowMinimizeIcon className={styles.icon} />
+					<WindowMaximizeIcon className={styles.icon} />
+					<WindowCloseIcon className={styles.icon} />
 				</div>
 			</div>
 		</>
