@@ -3,4 +3,81 @@
     max-width: 250px;
     background: var(--explorer-bg);
     border-right: 1px solid var(--border);
+    color: var(--text-color);
+    font-size: 0.75rem;
+}
+
+#compositeTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    padding: 0 8px;
+    text-transform: uppercase;
+
+    .icon{
+        height: 22px;
+        width: 22px;
+        padding: 3px;
+        border-radius: 5px;
+        
+        &:hover{
+            background-color: var(--bottombar-hover-bg);
+        }
+    }
+}
+
+#content{
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#folderHeader{
+    display: flex;
+    align-items: center;
+}
+
+#headerTitle{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.icon{
+    display: block;
+    height: 22px;
+    width: 22px;
+    padding: 3px;
+    border-radius: 5px;
+    fill: #fff;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+
+.folderOpen{
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.file{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 22px;
+    padding-left: 10px;
+    font-size: 0.85rem;
+    animation: slide 500ms;
+
+    &:hover{
+        background-color: var(--bottombar-hover-bg);
+    }
+}
+
+@keyframes slide {
+    0%{
+        transform: translateY(calc((-22*6px) - 16px));
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }

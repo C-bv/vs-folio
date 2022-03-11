@@ -7,7 +7,7 @@
     color: var(--text-color);
     background-color: var(--bottombar-bg);
     border-top: 1px solid var(--border);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .container{
@@ -20,6 +20,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    gap: 2.5px;
     padding: 0 5px;
     margin: 0 3px;
     cursor: pointer;

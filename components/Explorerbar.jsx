@@ -9,8 +9,6 @@ import AccountIcon from './icons/AccountIcon';
 import SettingsIcon from './icons/SettingsIcon';
 import styles from '../styles/Explorerbar.module.scss';
 
-// TODO: add icons and current file
-
 const explorerbarTopItems = [
 	{
 		Icon: FilesIcon,
@@ -45,24 +43,20 @@ const explorerbarBottomItems = [
 	},
 ];
 
-
 const Explorerbar = () => {
+
 	const router = useRouter();
 
 	return (
 		<aside id={styles.explorerbar}>
 			<div className={styles.sidebarTop}>
-				{explorerbarTopItems.map(({ Icon, path }) => (
-					<Link href={path} key={path}>
+				{explorerbarTopItems.map((element) => (
+					<Link href={element.path} key={element.path}>
 						<div
-							className={`${styles.iconContainer} ${router.pathname === path && styles.active
-								}`}
-						>
-							<Icon
+							className={`${styles.iconContainer} ${router.pathname === element.path && styles.active}`}>
+							<element.Icon
 								fill={
-									router.pathname === path
-										? 'rgb(225, 228, 232)'
-										: 'rgb(106, 115, 125)'
+									router.pathname === element.path ? 'rgb(225, 228, 232)' : 'rgb(106, 115, 125)'
 								}
 								className={styles.icon}
 							/>
@@ -71,12 +65,12 @@ const Explorerbar = () => {
 				))}
 			</div>
 			<div className={styles.explorerbarBottomItems}>
-				{explorerbarBottomItems.map(({ Icon, path }) => (
+				{explorerbarBottomItems.map((element) => (
 					<div className={styles.iconContainer}>
-						<Link href={path} key={path}>
-							<Icon
+						<Link href={element.path} key={element.path}>
+							<element.Icon
 								fill={
-									router.pathname === path
+									router.pathname === element.path
 										? 'rgb(225, 228, 232)'
 										: 'rgb(106, 115, 125)'
 								}
