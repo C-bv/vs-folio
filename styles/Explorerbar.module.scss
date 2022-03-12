@@ -7,6 +7,23 @@
     width: 48px;
     background-color: --sidebar-bg;
     border-right: 1px solid var(--border);
+
+    div:nth-child(1){
+        .iconContainer:nth-child(1){
+            svg{
+                fill: #fff;
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 2.5px;
+                background-color: var(--accent-color);
+            }
+        }
+    }
 }
 
 .iconContainer{
@@ -17,21 +34,16 @@
     height: 48px;
     width: 48px;
     cursor: pointer;
-
-    &.active::before{
-        content: '';
-        position: absolute;
-        left: 0;
-        height: 100%;
-        width: 2.5px;
-        background-color: var(--accent-color);
-    }
     
     &:hover svg{
-        fill: rgb(225, 228, 232);
+        fill: #fff;
     }
-}
 
+    svg{
+        fill: var(--sidebar-icon-color);
+    }
+
+}
 .icon{
     display: block;
     height: 24px;

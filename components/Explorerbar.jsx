@@ -1,82 +1,62 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import FilesIcon from './icons/FilesIcon';
 import GithubIcon from './icons/GithubIcon';
 import CodeIcon from './icons/CodeIcon';
-import PencilIcon from './icons/PencilIcon';
+import LinkedinIcon from './icons/LinkedinIcon';
 import MailIcon from './icons/MailIcon';
 import AccountIcon from './icons/AccountIcon';
 import SettingsIcon from './icons/SettingsIcon';
 import styles from '../styles/Explorerbar.module.scss';
+import { useState } from 'react';
+
 
 const explorerbarTopItems = [
 	{
-		Icon: FilesIcon,
-		path: '/',
+		icon: FilesIcon
 	},
 	{
-		Icon: GithubIcon,
-		path: '/github',
+		icon: GithubIcon,
+		path: 'https://github.com/C-bv'
 	},
 	{
-		Icon: CodeIcon,
-		path: '/projects',
+		icon: CodeIcon,
+		path: '/projects'
 	},
 	{
-		Icon: PencilIcon,
-		path: '/articles',
+		icon: LinkedinIcon,
+		path: 'https://www.linkedin.com/in/charlesbouveret/'
 	},
 	{
-		Icon: MailIcon,
-		path: '/contact',
+		icon: MailIcon,
+		path: '/contact'
 	},
 ];
 
 const explorerbarBottomItems = [
 	{
-		Icon: AccountIcon,
-		path: '/about',
+		icon: AccountIcon,
 	},
 	{
-		Icon: SettingsIcon,
-		path: '/settings',
+		icon: SettingsIcon,
 	},
 ];
 
 const Explorerbar = () => {
 
-	const router = useRouter();
-
 	return (
 		<aside id={styles.explorerbar}>
-			<div className={styles.sidebarTop}>
+			<div>
 				{explorerbarTopItems.map((element) => (
-					<Link href={element.path} key={element.path}>
-						<div
-							className={`${styles.iconContainer} ${router.pathname === element.path && styles.active}`}>
-							<element.Icon
-								fill={
-									router.pathname === element.path ? 'rgb(225, 228, 232)' : 'rgb(106, 115, 125)'
-								}
-								className={styles.icon}
-							/>
-						</div>
-					</Link>
+					<div className={styles.iconContainer} >
+						<a href={element.path} key={element.path} target='_blank' >
+							<element.icon className={styles.icon} />
+						</a>
+					</div>
 				))}
 			</div>
-			<div className={styles.explorerbarBottomItems}>
+			<div>
 				{explorerbarBottomItems.map((element) => (
 					<div className={styles.iconContainer}>
-						<Link href={element.path} key={element.path}>
-							<element.Icon
-								fill={
-									router.pathname === element.path
-										? 'rgb(225, 228, 232)'
-										: 'rgb(106, 115, 125)'
-								}
-								className={styles.icon}
-							/>
-						</Link>
+						<element.icon className={styles.icon} />
 					</div>
 				))}
 			</div>
