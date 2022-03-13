@@ -5,3 +5,9 @@ export default function GithubPage() {
 		</>
 	);
 }
+
+export function getStaticProps() {
+	return {
+		props: { title: 'Github' }
+	};
+}

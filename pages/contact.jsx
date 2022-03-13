@@ -1,7 +1,16 @@
 export default function ContactPage() {
 	return (
 		<>
-			<div>ContactPage</div>
+			<div>
+				<p>.Contact</p>
+
+			</div>
 		</>
 	);
+}
+
+export function getStaticProps() {
+	return {
+		props: { title: 'Contact' }
+	};
 }

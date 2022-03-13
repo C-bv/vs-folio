@@ -5,3 +5,12 @@ export default function ErrorPage() {
 		</>
 	);
 }
+
+export function getStaticProps() {
+	return {
+		props: {
+			title: '404',
+			file: 'error'
+		}
+	};
+}

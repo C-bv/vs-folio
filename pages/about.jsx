@@ -5,3 +5,9 @@ export default function AboutPage() {
 		</>
 	);
 }
+
+export function getStaticProps() {
+	return {
+		props: { title: 'About' }
+	};
+}

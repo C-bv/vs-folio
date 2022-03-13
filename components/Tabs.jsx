@@ -4,18 +4,18 @@ import { useRouter } from 'next/router';
 import styles from '../styles/Tabs.module.scss';
 
 const Tabs = ({ icon, filename, path }) => {
-  const router = useRouter();
+	const router = useRouter();
 
-  return (
-    <Link href={path}> 
-      <div
-        className={`${styles.tabs} ${router.pathname === path && styles.active}`}
-      >
-        <Image src={icon} alt={filename} height={18} width={18} />
-        <p>{filename}</p>
-      </div>
-    </Link>
-  );
+	return (
+		<Link href={path}>
+			<div
+				className={`${styles.tabs} ${router.pathname === path && styles.active}`}
+			>
+				<Image src={icon} alt={filename} height={18} width={18} />
+				<p>{filename}</p>
+			</div>
+		</Link>
+	);
 };
 
 export default Tabs;

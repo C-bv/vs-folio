@@ -29,7 +29,7 @@ const explorerbarTopItems = [
 	},
 	{
 		icon: MailIcon,
-		// path: '/contact'
+		path: 'mailto:charles.bouveret@outlook.com?subject=Mail from portofolio'
 	},
 ];
 

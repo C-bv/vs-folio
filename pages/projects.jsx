@@ -5,3 +5,9 @@ export default function ProjectsPage() {
 		</>
 	);
 }
+
+export function getStaticProps() {
+	return {
+		props: { title: 'Projects' },
+	};
+}

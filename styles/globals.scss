@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
-
 :root {
     // COLORS
     --main-bg: #24292e;
@@ -21,25 +19,4 @@
     --scrollbar-track-bg: #24292e;
     --scrollbar-thumb-bg: #333536;
     --article-bg: #1f2428;
-
-    font-family: Source Sans Pro, sans-serif;
 }
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--main-bg);
-}
-
-// Cursor color
-.Typist .Cursor {
-    color: var(--accent-color) !important;
-    font-weight: bold;
-}
-

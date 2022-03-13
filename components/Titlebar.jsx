@@ -4,8 +4,6 @@ import WindowMaximizeIcon from "./icons/WindowMaximizeIcon";
 import WindowCloseIcon from "./icons/WindowCloseIcon";
 import styles from '../styles/Titlebar.module.scss';
 
-// TODO: add icons and current file
-
 const Titlebar = () => {
 	return (
 		<>

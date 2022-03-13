@@ -4,6 +4,23 @@
 }
 
 .content{
+    position: relative;
+    height: calc(100% - 35px);
     padding: 2rem;
+    overflow: hidden;
+    background-color: var(--main-bg);
+    
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -20%;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-image: url('/blackmage.svg');
+        background-size: cover;
+        background-position: top;
+        opacity: 0.1;
+        z-index: 0;
+    }
 }
-

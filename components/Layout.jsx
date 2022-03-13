@@ -5,20 +5,20 @@ import Bottombar from '../components/Bottombar';
 import Tabsbar from '../components/Tabsbar';
 import styles from '../styles/Layout.module.scss';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
 	return (
 		<>
-		<Titlebar />
-		<div id={styles.container}>
-		  <Explorerbar />
-		  <Explorer />
-		  <div style={{ width: '100%' }}>
-			<Tabsbar />
-			<main className={styles.content}>{children}</main>
-		  </div>
-		</div>
-		<Bottombar />
-	  </>
+			<Titlebar />
+			<div id={styles.container}>
+				<Explorerbar />
+				<Explorer />
+				<div style={{ width: '100%' }}>
+					<Tabsbar />
+					<main className={styles.content}>{children}</main>
+				</div>
+			</div>
+			<Bottombar />
+		</>
 	);
 };
 
