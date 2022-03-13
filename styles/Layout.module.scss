@@ -1,4 +1,9 @@
-#main{
+#container{
     height: calc(100vh - 30px - 22.5px);
     display: flex;
 }
+
+.content{
+    padding: 2rem;
+}
+

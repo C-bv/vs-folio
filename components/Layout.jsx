@@ -9,7 +9,7 @@ const Layout = ({children}) => {
 	return (
 		<>
 		<Titlebar />
-		<div id={styles.main}>
+		<div id={styles.container}>
 		  <Explorerbar />
 		  <Explorer />
 		  <div style={{ width: '100%' }}>

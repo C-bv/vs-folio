@@ -5,8 +5,10 @@ import LinkedinIcon from './icons/LinkedinIcon';
 import MailIcon from './icons/MailIcon';
 import AccountIcon from './icons/AccountIcon';
 import SettingsIcon from './icons/SettingsIcon';
-import styles from '../styles/Explorerbar.module.scss';
+
 import { useState } from 'react';
+
+import styles from '../styles/Explorerbar.module.scss';
 
 
 const explorerbarTopItems = [
@@ -19,7 +21,7 @@ const explorerbarTopItems = [
 	},
 	{
 		icon: CodeIcon,
-		path: '/projects'
+		// path: ''
 	},
 	{
 		icon: LinkedinIcon,
@@ -27,7 +29,7 @@ const explorerbarTopItems = [
 	},
 	{
 		icon: MailIcon,
-		path: '/contact'
+		// path: '/contact'
 	},
 ];
 

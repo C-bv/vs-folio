@@ -36,3 +36,10 @@
 body {
     background-color: var(--main-bg);
 }
+
+// Cursor color
+.Typist .Cursor {
+    color: var(--accent-color) !important;
+    font-weight: bold;
+}
+

@@ -1,0 +1,14 @@
+#homePageContainer{
+    display: flex;
+    height: 75vh;
+    color: var(--text-color);
+}
+
+#title{
+    font-size: 2rem;
+}
+
+#msg{
+    color: var(--text-color);
+    font-size: 1rem;
+}
