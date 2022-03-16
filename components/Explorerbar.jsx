@@ -1,15 +1,11 @@
 import FilesIcon from './icons/FilesIcon';
 import GithubIcon from './icons/GithubIcon';
-import CodeIcon from './icons/CodeIcon';
 import LinkedinIcon from './icons/LinkedinIcon';
 import MailIcon from './icons/MailIcon';
 import AccountIcon from './icons/AccountIcon';
 import SettingsIcon from './icons/SettingsIcon';
 
-import { useState } from 'react';
-
 import styles from '../styles/Explorerbar.module.scss';
-
 
 const explorerbarTopItems = [
 	{
@@ -20,16 +16,12 @@ const explorerbarTopItems = [
 		path: 'https://github.com/C-bv'
 	},
 	{
-		icon: CodeIcon,
-		// path: ''
-	},
-	{
 		icon: LinkedinIcon,
 		path: 'https://www.linkedin.com/in/charlesbouveret/'
 	},
 	{
 		icon: MailIcon,
-		path: 'mailto:charles.bouveret@outlook.com?subject=Mail from portofolio'
+		path: 'mailto:charles.bouveret@outlook.com'
 	},
 ];
 

@@ -8,6 +8,9 @@ export default function ProjectsPage() {
 
 export function getStaticProps() {
 	return {
-		props: { title: 'Projects' },
+		props: {
+			title: 'Projects',
+			file: 'projects.js'
+		}
 	};
 }

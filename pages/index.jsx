@@ -15,14 +15,15 @@ export default function HomePage() {
 			{code ? (
 				<div id={styles.code}>
 					<Typist
-						avgTypingDelay={50}
-						onTypingDone={() => setTimeout(() => {
-							renderMsg(!msg)
-							renderCode(!code)
+						avgTypingDelay={40}
+						onTypingDone={() =>
 							setTimeout(() => {
-								renderParagraph(!p)
-							}, 1000)
-						}, 1500)}
+								renderMsg(!msg)
+								renderCode(!code)
+								setTimeout(() => {
+									renderParagraph(!p)
+								}, 1000)
+							}, 1500)}
 					>
 						{/* div starts */}
 						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>div<span className={tags.tagcolor}>&gt;</span></span><br />

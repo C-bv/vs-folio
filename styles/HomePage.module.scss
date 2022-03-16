@@ -13,6 +13,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 3rem;
+        animation: fade 2.5s;
         font-family: monospace;
         
         :not(:last-child) {
@@ -62,5 +63,14 @@
     100%{
         opacity: 100%;
         top: 0px;
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
     }
 }

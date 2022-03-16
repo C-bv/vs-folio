@@ -14,6 +14,9 @@ export default function ContactPage() {
 
 export function getStaticProps() {
 	return {
-		props: { title: 'Contact' }
+		props: {
+			title: 'Contact',
+			file: 'contact.css'
+		}
 	};
 }

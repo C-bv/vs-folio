@@ -5,10 +5,10 @@ import Bottombar from '../components/Bottombar';
 import Tabsbar from '../components/Tabsbar';
 import styles from '../styles/Layout.module.scss';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageProps }) => {
 	return (
 		<>
-			<Titlebar />
+			<Titlebar file={pageProps.file} />
 			<div id={styles.container}>
 				<Explorerbar />
 				<Explorer />

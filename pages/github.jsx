@@ -8,6 +8,9 @@ export default function GithubPage() {
 
 export function getStaticProps() {
 	return {
-		props: { title: 'Github' }
+		props: {
+			title: 'Github',
+			file: 'github.md'
+		}
 	};
 }

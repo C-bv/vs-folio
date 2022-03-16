@@ -4,7 +4,7 @@ import WindowMaximizeIcon from "./icons/WindowMaximizeIcon";
 import WindowCloseIcon from "./icons/WindowCloseIcon";
 import styles from '../styles/Titlebar.module.scss';
 
-const Titlebar = () => {
+const Titlebar = ({ file }) => {
 	return (
 		<>
 			<div id={styles.titlebar}>
@@ -24,7 +24,7 @@ const Titlebar = () => {
 					<p>Help</p>
 				</div>
 				<div id={styles.title}>
-					<p>Charles Bouveret - Visual Studio Code</p>
+					<p>{file} - Charles Bouveret - Visual Studio Code</p>
 				</div>
 				<div id={styles.buttons}>
 					<WindowMinimizeIcon className={styles.icon} />
