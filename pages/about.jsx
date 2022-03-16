@@ -10,7 +10,8 @@ export function getStaticProps() {
 	return {
 		props: {
 			title: 'About',
-			file: 'about.html'
+			file: 'about.html',
+			language: 'HTML'
 		}
 	};
 }

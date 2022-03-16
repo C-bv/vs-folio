@@ -17,7 +17,7 @@ const Layout = ({ children, pageProps }) => {
 					<main className={styles.content}>{children}</main>
 				</div>
 			</div>
-			<Bottombar />
+			<Bottombar language={pageProps.language}/>
 		</>
 	);
 };

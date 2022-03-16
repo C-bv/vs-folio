@@ -10,7 +10,8 @@ export function getStaticProps() {
 	return {
 		props: {
 			title: 'Projects',
-			file: 'projects.js'
+			file: 'projects.js',
+			language: 'JavaScript'
 		}
 	};
 }

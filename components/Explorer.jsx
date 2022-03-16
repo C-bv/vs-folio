@@ -26,12 +26,7 @@ const explorerElements = [
 		name: 'projects.js',
 		path: '/projects',
 		icon: 'js_icon.svg',
-	},
-	{
-		name: 'github.md',
-		path: '/github',
-		icon: 'markdown_icon.svg',
-	},
+	}
 ];
 
 const Explorer = () => {

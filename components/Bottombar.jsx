@@ -6,7 +6,7 @@ import SourceControlIcon from './icons/SourceControlIcon';
 import JsonIcon from './icons/JsonIcon';
 import styles from '../styles/Bottombar.module.scss';
 
-const Bottombar = () => {
+const Bottombar = ({ language }) => {
     return (
         <div id={styles.bottombar}>
             <div className={styles.container}>
@@ -26,8 +26,8 @@ const Bottombar = () => {
             </div>
             <div className={styles.container}>
                 <div className={styles.iconContainer}>
-                    <JsonIcon className={styles.icon}/>
-                    <p>JavaScript React</p>
+                    <JsonIcon className={styles.icon} />
+                    <p>{language}</p>
                 </div>
                 <div className={styles.iconContainer}>
                     <BellIcon className={styles.icon} />

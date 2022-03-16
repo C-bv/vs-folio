@@ -80,7 +80,8 @@ export function getStaticProps() {
 	return {
 		props: {
 			title: 'Home',
-			file: 'home.jsx'
+			file: 'home.jsx',
+			language: 'JavaScript React'
 		}
 	};
 }
