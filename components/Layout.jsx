@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 			<div id={styles.container}>
 				<Explorerbar />
 				<Explorer />
-				<div style={{ width: '100%' }}>
+				<div>
 					<Tabsbar />
 					<main className={styles.content}>{children}</main>
 				</div>

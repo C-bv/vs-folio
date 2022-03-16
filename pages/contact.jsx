@@ -1,8 +1,11 @@
+import ContactCode from "../components/ContactCode";
+
 export default function ContactPage() {
+
 	return (
 		<>
 			<div>
-				<p>.Contact</p>
+				<ContactCode />
 
 			</div>
 		</>

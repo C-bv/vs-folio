@@ -47,17 +47,17 @@ const Explorerbar = () => {
 	return (
 		<aside id={styles.explorerbar}>
 			<div>
-				{explorerbarTopItems.map((element) => (
-					<div className={styles.iconContainer} >
-						<a href={element.path} key={element.path} target='_blank' >
+				{explorerbarTopItems.map((element, index) => (
+					<div className={styles.iconContainer} key={index} >
+						<a href={element.path} target='_blank' >
 							<element.icon className={styles.icon} />
 						</a>
 					</div>
 				))}
 			</div>
 			<div>
-				{explorerbarBottomItems.map((element) => (
-					<div className={styles.iconContainer}>
+				{explorerbarBottomItems.map((element, index) => (
+					<div className={styles.iconContainer} key={index}>
 						<element.icon className={styles.icon} />
 					</div>
 				))}

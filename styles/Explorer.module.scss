@@ -1,7 +1,6 @@
 #explorer{
-    width: 20vw;
-    max-width: 250px;
-    min-width: 175px;
+    min-width: max-content;
+    height: 100%;
     background: var(--explorer-bg);
     border-right: 1px solid var(--border);
     color: var(--text-color);
@@ -28,9 +27,9 @@
     }
 }
 
+
 #content{
     cursor: pointer;
-    overflow: hidden;
 }
 
 #folderHeader{

@@ -20,8 +20,6 @@
         }
         
         #maintext{
-            background-color: var( --main-bg);
-            z-index: 1;
 
             h2{
                 margin-left: 5px;
@@ -44,7 +42,6 @@
         #paragraphtext{
             position: relative;
             font-size: 0.85rem;
-            z-index: 0;
             
             p{
                 position: absolute;
@@ -59,9 +56,11 @@
 }
 @keyframes slide {
     0%{
-        top: -100px;
+        opacity: 0%;
+        top: -20px;
     }
     100%{
+        opacity: 100%;
         top: 0px;
     }
 }

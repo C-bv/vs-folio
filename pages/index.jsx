@@ -28,19 +28,19 @@ export default function HomePage() {
 						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>div<span className={tags.tagcolor}>&gt;</span></span><br />
 
 						{/* h2 starts */}
-						&emsp;<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>h2<span className={tags.tagcolor}>&gt;</span></span>
+						&emsp;&emsp;<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>h2<span className={tags.tagcolor}>&gt;</span></span>
 						<span>Hi, my name is</span>
 						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;/</span>h2<span className={tags.tagcolor}>&gt;</span></span><br />
 						{/* h2 ends */}
 
 						{/* h1 starts */}
-						&emsp;<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>h1<span className={tags.tagcolor}>&gt;</span></span>
+						&emsp;&emsp;<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>h1<span className={tags.tagcolor}>&gt;</span></span>
 						<span>Charles Bouveret</span>
 						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;/</span>h1<span className={tags.tagcolor}>&gt;</span></span><br />
 						{/* h1 ends */}
 
 						{/* h3 starts */}
-						&emsp;<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>h3<span className={tags.tagcolor}>&gt;</span></span>
+						&emsp;&emsp;<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>h3<span className={tags.tagcolor}>&gt;</span></span>
 						<span>Junior Web developer</span>
 						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;/</span>h3<span className={tags.tagcolor}>&gt;</span></span><br />
 						{/* h3 ends */}
