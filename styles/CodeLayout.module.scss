@@ -2,14 +2,13 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    font-family: monospace;
     font-size: 1.2rem;
     counter-reset: line;
     
     .className {
         color: var(--accent-color);
     }
-    
+
     .line::before {
         content: counter(line);
         counter-increment: line;
@@ -25,4 +24,12 @@
             text-decoration: underline;
         }
     }
+}
+
+.tagnamecolor{
+    color: #569CD6;
+}
+
+.tagcolor{
+    color: #6d6d6d;
 }

@@ -1,4 +1,4 @@
-import styles from '../styles/ContactCode.module.scss';
+import styles from '../styles/CodeLayout.module.scss';
 
 const contactLinks = [
 	{

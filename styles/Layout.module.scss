@@ -4,7 +4,10 @@
     grid-template-columns: auto auto 1fr ; 
     grid-template-rows: auto;
     gap: 0px 0px;
-    overflow: hidden;
+
+    >div:last-child{
+        overflow: hidden;
+    }
 }
 
 .content{
@@ -14,6 +17,8 @@
     overflow: hidden;
     background-color: var(--main-bg);
     z-index: 1;
+    font-family: monospace; // Change to variable !!
+    white-space: nowrap;
     
     &::after{
         content: '';

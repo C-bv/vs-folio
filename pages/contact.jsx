@@ -2,11 +2,10 @@ import ContactCode from "../components/ContactCode";
 import styles from '../styles/ContactPage.module.scss';
 
 export default function ContactPage() {
-
 	return (
-		<div class={styles.pageContainer}>
+		<div className={styles.pageContainer}>
 			<div>
-				<h3>Contact me by</h3>
+				<h3>Contact me on</h3>
 				<ContactCode />
 			</div>
 		</div>

@@ -10,7 +10,7 @@ export function getStaticProps() {
 	return {
 		props: {
 			title: '404',
-			file: 'error',
+			file: 'error.php',
 			language: 'PHP'
 		}
 	};

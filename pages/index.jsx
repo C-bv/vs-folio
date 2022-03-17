@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Typist from 'react-typist';
 import "react-typist/dist/Typist.css";
-import tags from '../styles/Tagstyles.module.scss';
+import tags from '../styles/CodeLayout.module.scss';
 import styles from '../styles/HomePage.module.scss';
 
 
@@ -45,12 +45,6 @@ export default function HomePage() {
 						<span>Junior Web developer</span>
 						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;/</span>h3<span className={tags.tagcolor}>&gt;</span></span><br />
 						{/* h3 ends */}
-
-						{/* p starts */}
-						{/* &emsp;<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>p<span className={tags.tagcolor}>&gt;</span></span>
-						<span>I'm a junior web developer based in Pau, France</span>
-						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;/</span>p<span className={tags.tagcolor}>&gt;</span></span><br /> */}
-						{/* p ends */}
 
 						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;/</span>div<span className={tags.tagcolor}>&gt;</span></span><br />
 						{/* div ends */}
