@@ -5,7 +5,7 @@ export default function ContactPage() {
 	return (
 		<div className={styles.pageContainer}>
 			<div>
-				<h3>Contact me on</h3>
+				<h4>Contact me on</h4>
 				<ContactCode />
 			</div>
 		</div>

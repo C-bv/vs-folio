@@ -18,7 +18,7 @@
     background-color: var(--main-bg);
     z-index: 1;
     font-family: monospace; // Change to variable !!
-    white-space: nowrap;
+    // white-space: nowrap;
     
     &::after{
         content: '';

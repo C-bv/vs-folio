@@ -1,17 +1,28 @@
-export default function ProjectsPage() {
+
+import styles from '../styles/ProjectsPage.module.scss'
+
+const ProjectsPage = ({ projects }) => {
 	return (
-		<>
-			<div>ProjectsPage</div>
-		</>
+		<div className={styles.pageContainer}>
+			<div>
+				<h4>Projects I've worked on</h4>
+			</div>
+			<div className={styles.container}>
+
+			</div>
+		</div>
 	);
 }
 
-export function getStaticProps() {
+export async function getStaticProps() {
+	
 	return {
 		props: {
 			title: 'Projects',
 			file: 'projects.js',
-			language: 'JavaScript'
+			language: 'JavaScript',
 		}
 	};
 }
+
+export default ProjectsPage;
