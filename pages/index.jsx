@@ -70,7 +70,8 @@ export default function HomePage() {
 	);
 }
 
-export function getStaticProps() {
+export async function getStaticProps() {
+
 	return {
 		props: {
 			title: 'Home',

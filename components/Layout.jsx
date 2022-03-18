@@ -14,7 +14,7 @@ const Layout = ({ children, pageProps }) => {
 				<Explorer />
 				<div>
 					<Tabsbar />
-					<main className={styles.content}>{children}</main>
+					<main className={styles.content} >{children}</main>
 				</div>
 			</div>
 			<Bottombar language={pageProps.language}/>

@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<Layout pageProps={pageProps}>
 			<Head title={`Charles Bouveret - ${pageProps.title}`} />
-			<Component />
+			<Component {...pageProps}/>
 		</Layout>
 	);
 }
