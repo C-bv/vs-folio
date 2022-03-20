@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Rhuma Sug",
         "image": "rhuma_sug.png",
-        "description": "An apple mobile which is nothing like apple",
+        "description": "School project consisting of building a small e-commerce website using PHP for the first time.",
         "path": "https://github.com/C-bv/rhuma_sug_symfony",
         "tags": [
             "php", 

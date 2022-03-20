@@ -1,13 +1,12 @@
 import ContactCode from "../components/ContactCode";
+import Typist from 'react-typist';
 import styles from '../styles/ContactPage.module.scss';
 
-export default function ContactPage() {
+export default function ContactPage({ pageTitle }) {
 	return (
 		<div className={styles.pageContainer}>
-			<div>
-				<h4>Contact me on</h4>
-				<ContactCode />
-			</div>
+			<Typist className='pageTypist'>{pageTitle}</Typist>
+			<ContactCode />
 		</div>
 	);
 }
@@ -17,7 +16,8 @@ export function getStaticProps() {
 		props: {
 			title: 'Contact',
 			file: 'contact.css',
-			language: 'CSS'
+			language: 'CSS',
+			pageTitle: 'Contact me on'
 		}
 	};
 }

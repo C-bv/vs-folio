@@ -1,0 +1,49 @@
+.projectContainer{
+    background-color: var(--titlebar-bg);
+    border-radius: 5px;
+    width: 300px;
+    transition: all 250ms ease;
+    
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.1);
+
+        h3{
+            color: var(--accent-color);
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+    
+    .image{
+        border-radius: 5px 5px 0 0;
+    }
+
+    .innerCard{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1em;
+
+        p{
+            font-size: 0.85rem;
+        }
+
+        .tags{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            font-size: 0.85rem;
+
+            .tag{
+                border: 1px solid var(--accent-color);
+                border-radius: 90px;
+                padding: 5px;
+            }
+        }
+    }
+}
