@@ -6,6 +6,7 @@
     #code{
         font-size: 2rem;
         font-family: monospace;
+        width: 100%;
     }
 
     #rendered{
@@ -72,5 +73,20 @@
     }
     100%{
         opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #homePageContainer{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Resizable-module_root__39ZLq{
+        width: 0px;
+    }
+    .Resizable-module_handle__1mp2v{
+        display: none;
     }
 }

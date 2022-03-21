@@ -33,3 +33,9 @@
 .tagcolor{
     color: #6d6d6d;
 }
+
+@media screen and (max-width: 550px) {
+    #code{
+        font-size: 0.85rem;
+    }
+}

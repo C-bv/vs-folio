@@ -7,3 +7,9 @@
         text-decoration: none;
     }
 }
+
+@media screen and (max-width: 730px) {
+    #inner{
+        justify-items: center;
+    }
+}

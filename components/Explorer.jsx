@@ -35,7 +35,7 @@ const Explorer = ({ toggleExplorer }) => {
 	return (
 		<Resizable direction="right"
 			maxSize={800}
-			style={toggleExplorer ? { width: '250px' } : { width: '0px' }}
+			style={toggleExplorer ? { width: '0px ' } : { width: '250px' }}
 		>
 			<div id={styles.explorer}>
 				<div id={styles.compositeTitle}>

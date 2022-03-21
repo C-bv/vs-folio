@@ -52,3 +52,9 @@
         background: #6a737d88;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .content{
+        padding: 1rem;
+    }
+}

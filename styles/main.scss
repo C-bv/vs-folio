@@ -34,6 +34,12 @@ body{
     margin-bottom: 1em;
 }
 
+@media screen and (max-width: 600px) {
+    .Typist{
+        font-size: 1.1rem;
+    }
+}
+
 // Resizable 
 .Resizable-module_handle__1mp2v{
 
@@ -42,5 +48,20 @@ body{
     }
     &:active{
         background-color: #005cc5;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .Resizable-module_handle__1mp2v{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    *{
+        cursor: none;
     }
 }
