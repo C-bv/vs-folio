@@ -12,20 +12,19 @@ const Titlebar = ({ file }) => {
 					<Image
 						src="/vscode_icon.svg"
 						alt="VSCode Icon"
+						layout='fixed'
 						height={15}
 						width={15}
 					/>
-					<p>File</p>
-					<p>Edit</p>
-					<p>View</p>
-					<p>Go</p>
-					<p>Run</p>
-					<p>Terminal</p>
-					<p>Help</p>
+					<span>File</span>
+					<span>Edit</span>
+					<span>View</span>
+					<span>Go</span>
+					<span>Run</span>
+					<span>Terminal</span>
+					<span>Help</span>
 				</div>
-				<div id={styles.title}>
-					<p>{file} - Charles Bouveret - Visual Studio Code</p>
-				</div>
+				<span id={styles.title}>{file} - Charles Bouveret - Visual Studio Code</span>
 				<div id={styles.buttons}>
 					<WindowMinimizeIcon className={styles.icon} />
 					<WindowMaximizeIcon className={styles.icon} />

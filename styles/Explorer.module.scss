@@ -71,12 +71,3 @@
         background-color: var(--explorer-hover-bg);
     }
 }
-
-@keyframes slide {
-    0%{
-        transform: translateY(calc((-22*6px) - 16px));
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}

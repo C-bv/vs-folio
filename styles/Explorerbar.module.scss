@@ -8,30 +8,7 @@
     background-color: --sidebar-bg;
     border-right: 1px solid var(--border);
     background-color: var(--main-bg);
-
-    div:nth-child(1){
-
-        .iconContainer:nth-child(1){
-            &::before{
-                content: '';
-                position: absolute;
-                left: 0;
-                height: 100%;
-                width: 2.5px;
-                background-color: var(--accent-color);
-            }
-        }
-
-        svg{
-            display: block;
-            height: 24px;
-            width: 24px;
-        
-            &.active{
-                fill: #fff;
-            }
-        }
-    }
+    
     .iconContainer{
         position: relative;
         display: flex;
@@ -45,13 +22,35 @@
             fill: #fff;
         }
 
-        svg{
-            fill: var(--sidebar-icon-color);
-        }
-        
         a{
             padding: 12px;
         }
 
+        svg{
+            display: block;
+            height: 24px;
+            width: 24px;
+            fill: var(--sidebar-icon-color);
+
+            &.active{
+                fill: #fff;
+            }
+        }
+    }
+
+    div:nth-child(1){
+
+        div:nth-child(1){
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 2.5px;
+                background-color: var(--accent-color);
+            }
+        }
     }
 }
+

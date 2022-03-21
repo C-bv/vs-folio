@@ -30,10 +30,10 @@ const explorerbarTopItems = [
 
 const explorerbarBottomItems = [
 	{
-		icon: AccountIcon,
+		icon: AccountIcon
 	},
 	{
-		icon: SettingsIcon,
+		icon: SettingsIcon
 	},
 ];
 

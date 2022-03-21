@@ -35,3 +35,18 @@
     width: 16px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+    #menu {
+        gap: 5px;
+    }
+    #title {
+      flex: 5;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #title {
+        display: none;
+    }
+}
