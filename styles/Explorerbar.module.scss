@@ -10,11 +10,8 @@
     background-color: var(--main-bg);
 
     div:nth-child(1){
-        .iconContainer:nth-child(1){
-            svg{
-                fill: #fff;
-            }
 
+        .iconContainer:nth-child(1){
             &::before{
                 content: '';
                 position: absolute;
@@ -24,33 +21,37 @@
                 background-color: var(--accent-color);
             }
         }
-    }
-}
 
-.iconContainer{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-    width: 48px;
-    cursor: pointer;
-    
-    &:hover svg{
-        fill: #fff;
+        svg{
+            display: block;
+            height: 24px;
+            width: 24px;
+        
+            &.active{
+                fill: #fff;
+            }
+        }
     }
+    .iconContainer{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+        cursor: pointer;
+        
+        &:hover svg{
+            fill: #fff;
+        }
 
-    svg{
-        fill: var(--sidebar-icon-color);
-    }
-    
-    a{
-        padding: 12px;
-    }
+        svg{
+            fill: var(--sidebar-icon-color);
+        }
+        
+        a{
+            padding: 12px;
+        }
 
-}
-.icon{
-    display: block;
-    height: 24px;
-    width: 24px;
+    }
 }

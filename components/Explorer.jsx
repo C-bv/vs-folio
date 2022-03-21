@@ -29,18 +29,20 @@ const explorerElements = [
 	}
 ];
 
-const Explorer = () => {
+const Explorer = ({ toggleExplorer }) => {
 	const [folderOpen, setFolderOpen] = useState(true);
 
 	return (
 		<Resizable direction="right"
 			maxSize={800}
-			style={{ width: '250px' }}
+			style={toggleExplorer ? { width: '250px' } : { width: '0px' }}
 		>
 			<div id={styles.explorer}>
 				<div id={styles.compositeTitle}>
 					<p>Explorer</p>
 					<Elipsis className={styles.icon} />
+				</div>
+				<div>
 				</div>
 				<div id={styles.content}>
 					<div id={styles.folderHeader} onClick={() => setFolderOpen(!folderOpen)}>
@@ -69,7 +71,7 @@ const Explorer = () => {
 					</div>
 				</div>
 			</div>
-		</Resizable>
+		</Resizable >
 	);
 };
 
