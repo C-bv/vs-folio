@@ -2,18 +2,14 @@
 
     .inner{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: auto 2fr;
+        justify-items: center;
         gap: 50px;
 
-        >div:nth-child(1){
+        .innerText{
             display: flex;
             flex-direction: column;
             gap: 1.2rem;
-            position: relative;
-
-            .innerText{
-                position: relative;
-            }
         }
 
         .wrapper{
@@ -30,13 +26,26 @@
     }
 }
 
+
+.slideDelay1{
+    animation: slide 500ms ease;
+}
+
+.slideDelay2{
+    animation: slide 1500ms ease;
+}
+
+.slideDelay3{
+    animation: slide 2000ms ease;
+}
+
 @keyframes slide {
     0%{
         opacity: 0;
         transform: translateY(20px);
     }
     100%{
-        opacity: 1 !important;
+        opacity: 1;
         transform: translateY(0px);
     }
 }

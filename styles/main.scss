@@ -41,7 +41,17 @@ html,body, #__next {
 }
 
 // Resizable 
-.Resizable-module_handle__1mp2v{
+
+.react-resizable {
+    position: relative;
+}
+.react-resizable-handle {
+    position: absolute;
+    width: 5px;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    cursor: w-resize;
 
     &:hover{
         background-color: #005cc5;
@@ -53,7 +63,7 @@ html,body, #__next {
 
 @media screen and (max-width: 700px) {
 
-    .Resizable-module_handle__1mp2v{
+    .react-resizable-handle{
         display: none;
     }
 }

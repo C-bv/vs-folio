@@ -7,15 +7,15 @@ export default function AboutPage({ pageTitle }) {
 		<div className={styles.pageContainer}>
 			<Typist className='pageTypist'>{pageTitle}</Typist>
 			<div className={styles.inner}>
-				<div>
-					<p>
-						Durant l'année suivante, où j'ai exercé divers emplois d'intérim, j'ai découvert le monde de la compétition automobile, motocycles plus précisément. Très vite, je me suis fixé pour objectif de devenir acteur du monde de la compétition moto, notamment comme technicien dans une écurie de course.
+				<div className={styles.innerText}>
+					<p className={styles.slideDelay1}>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae molestias incidunt nemo odio sint vitae voluptates temporibus, error rem quas, quo animi ratione recusandae in inventore repudiandae voluptas numquam porro.
 					</p>
-					<p >
-						Durant l'année suivante, où j'ai exercé divers emplois d'intérim, j'ai découvert le monde de la compétition automobile, motocycles plus précisément. Très vite, je me suis fixé pour objectif de devenir acteur du monde de la compétition moto, notamment comme technicien dans une écurie de course.
+					<p className={styles.slideDelay2}>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae molestias incidunt nemo odio sint vitae voluptates temporibus, error rem quas, quo animi ratione recusandae in inventore repudiandae voluptas numquam porro.
 					</p>
-					<p>
-						Désireux de m'installer dans cette belle région Paloise, j'ai obtenu un CDI dans un atelier spécialisé en compétition moto.
+					<p className={styles.slideDelay3}>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae molestias incidunt.
 					</p>
 				</div>
 				<div className={styles.wrapper}>

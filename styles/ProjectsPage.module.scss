@@ -3,13 +3,8 @@
     #inner{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        justify-items: center;
         gap: 1rem;
         text-decoration: none;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    #inner{
-        justify-items: center;
     }
 }

@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Elipsis from './icons/Elipsis';
 import ChevronRight from './icons/ChevronRight'
 import { useState } from 'react';
-import { Resizable } from 'react-resizable-element';
+
+import { ResizableBox } from 'react-resizable';
 import styles from '../styles/Explorer.module.scss';
 
 const explorerElements = [
@@ -33,9 +34,10 @@ const Explorer = ({ toggleExplorer }) => {
 	const [folderOpen, setFolderOpen] = useState(true);
 
 	return (
-		<Resizable direction="right"
-			maxSize={800}
-			style={toggleExplorer ? { width: '0px ' } : { width: '250px' }}
+		<ResizableBox
+			width={toggleExplorer ? 0 : 200}
+			maxConstraints={[800, 0]}
+			handle={<span className={toggleExplorer ?  null : "react-resizable-handle"} />}
 		>
 			<div id={styles.explorer}>
 				<div id={styles.compositeTitle}>
@@ -71,7 +73,7 @@ const Explorer = ({ toggleExplorer }) => {
 					</div>
 				</div>
 			</div>
-		</Resizable >
+		</ResizableBox>
 	);
 };
 
