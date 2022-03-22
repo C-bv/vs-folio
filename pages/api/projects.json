@@ -1,6 +1,18 @@
 [
     {
         "id": 1,
+        "name": "Vs-folio",
+        "image": "vs_folio.png",
+        "description": "A vs-code themed portfolio build with Next.",
+        "path": "https://github.com/C-bv/vs-folio",
+        "tags": [
+            "react", 
+            "Next",
+            "javascript"
+        ]
+    },
+    {
+        "id": 2,
         "name": "Rhuma Sug",
         "image": "rhuma_sug.png",
         "description": "School project consisting of building a small e-commerce website using PHP for the first time.",
@@ -12,31 +24,7 @@
         ]
     },
     {
-        "id": 2,
-        "name": "Toto",
-        "image": "rhuma_sug.png",
-        "description": "An apple mobile which is nothing like apple",
-        "path": "https://github.com/C-bv/rhuma_sug_symfony",
-        "tags": [
-            "php", 
-            "symfony",
-            "javascript"
-        ]
-    },
-    {
         "id": 3,
-        "name": "Rhuma Sug",
-        "image": "rhuma_sug.png",
-        "description": "An apple mobile which is nothing like apple",
-        "path": "https://github.com/C-bv/rhuma_sug_symfony",
-        "tags": [
-            "php", 
-            "symfony",
-            "javascript"
-        ]
-    },
-    {
-        "id": 4,
         "name": "Rhuma Sug",
         "image": "rhuma_sug.png",
         "description": "An apple mobile which is nothing like apple",

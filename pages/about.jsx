@@ -2,6 +2,7 @@ import styles from '../styles/AboutPage.module.scss';
 import Typist from 'react-typist';
 
 export default function AboutPage({ pageTitle }) {
+
 	return (
 		<div className={styles.pageContainer}>
 			<Typist className='pageTypist'>{pageTitle}</Typist>
@@ -10,7 +11,7 @@ export default function AboutPage({ pageTitle }) {
 					<p>
 						Durant l'année suivante, où j'ai exercé divers emplois d'intérim, j'ai découvert le monde de la compétition automobile, motocycles plus précisément. Très vite, je me suis fixé pour objectif de devenir acteur du monde de la compétition moto, notamment comme technicien dans une écurie de course.
 					</p>
-					<p>
+					<p >
 						Durant l'année suivante, où j'ai exercé divers emplois d'intérim, j'ai découvert le monde de la compétition automobile, motocycles plus précisément. Très vite, je me suis fixé pour objectif de devenir acteur du monde de la compétition moto, notamment comme technicien dans une écurie de course.
 					</p>
 					<p>

@@ -3,7 +3,7 @@ import WarningIcon from './icons/WarningIcon';
 import BellIcon from './icons/BellIcon';
 import SyncIcon from './icons/SyncIcon';
 import SourceControlIcon from './icons/SourceControlIcon';
-import JsonIcon from './icons/JsonIcon';
+import CodeIcon from './icons/CodeIcon';
 import styles from '../styles/Bottombar.module.scss';
 
 const Bottombar = ({ language }) => {
@@ -26,7 +26,7 @@ const Bottombar = ({ language }) => {
             </div>
             <div className={styles.container}>
                 <div className={styles.iconContainer}>
-                    <JsonIcon className={styles.icon} />
+                    <CodeIcon className={styles.icon} />
                     <p>{language}</p>
                 </div>
                 <div className={styles.iconContainer}>

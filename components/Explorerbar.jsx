@@ -39,7 +39,7 @@ const explorerbarBottomItems = [
 
 export default function Explorerbar({ toggleExplorer }) {
 	const iconClicked = useState(true);
-	const [isActive, setActive] = useState("true");
+	const [isActive, setActive] = useState(false);
 
 	return (
 		<aside id={styles.explorerbar} >
