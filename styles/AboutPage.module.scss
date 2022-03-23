@@ -49,3 +49,11 @@
         transform: translateY(0px);
     }
 }
+
+@media screen and (max-width: 800px) {
+
+    .inner{
+        grid-template-columns: auto !important;
+        grid-auto-flow: row dense
+    }
+}

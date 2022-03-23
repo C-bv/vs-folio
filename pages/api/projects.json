@@ -7,8 +7,8 @@
         "path": "https://github.com/C-bv/vs-folio",
         "tags": [
             "react", 
-            "Next",
-            "javascript"
+            "next", 
+            "sass"
         ]
     },
     {
@@ -20,7 +20,7 @@
         "tags": [
             "php", 
             "symfony",
-            "javascript"
+            "sass"
         ]
     },
     {

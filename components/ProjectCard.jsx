@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
                     <p>{project.description}</p>
                     <div className={styles.tags}>
                         {project.tags.map((tag) => (
-                            <span className={styles.tag} key={tag}>{tag}</span>
+                            <img src={`shields/${tag}.svg`} alt={tag} key={tag} />
                         ))}
                     </div>
                 </div>
