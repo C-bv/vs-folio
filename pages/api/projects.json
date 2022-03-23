@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Vs-folio",
-        "image": "vs_folio.png",
+        "image": "img/vs_folio.png",
         "description": "A vs-code themed portfolio build with Next.",
         "path": "https://github.com/C-bv/vs-folio",
         "tags": [
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "name": "Rhuma Sug",
-        "image": "rhuma_sug.png",
+        "image": "img/rhuma_sug.png",
         "description": "School project consisting of building a small e-commerce website using PHP for the first time.",
         "path": "https://github.com/C-bv/rhuma_sug_symfony",
         "tags": [
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "name": "Rhuma Sug",
-        "image": "rhuma_sug.png",
+        "image": "img/rhuma_sug.png",
         "description": "An apple mobile which is nothing like apple",
         "path": "https://github.com/C-bv/rhuma_sug_symfony",
         "tags": [

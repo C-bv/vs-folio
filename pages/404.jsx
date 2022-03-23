@@ -1,4 +1,5 @@
 export default function ErrorPage() {
+
 	return (
 		<>
 			<div>404</div>
@@ -7,6 +8,7 @@ export default function ErrorPage() {
 }
 
 export function getStaticProps() {
+	
 	return {
 		props: {
 			title: '404',

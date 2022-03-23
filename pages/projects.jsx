@@ -4,6 +4,7 @@ import Typist from 'react-typist';
 import styles from '../styles/ProjectsPage.module.scss'
 
 const ProjectsPage = ({ projects, pageTitle }) => {
+
 	return (
 		<div className={styles.pageContainer}>
 			<Typist className='pageTypist'>{pageTitle}</Typist>

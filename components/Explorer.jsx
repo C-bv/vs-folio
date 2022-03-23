@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Elipsis from './icons/Elipsis';
 import ChevronRight from './icons/ChevronRight'
 import { useState } from 'react';
-
 import { ResizableBox } from 'react-resizable';
 import styles from '../styles/Explorer.module.scss';
 
@@ -11,33 +10,34 @@ const explorerElements = [
 	{
 		name: 'home.jsx',
 		path: '/',
-		icon: 'react_icon.svg',
+		icon: 'img/react_icon.svg',
 	},
 	{
 		name: 'about.html',
 		path: '/about',
-		icon: 'html_icon.svg',
+		icon: 'img/html_icon.svg',
 	},
 	{
 		name: 'contact.css',
 		path: '/contact',
-		icon: 'css_icon.svg',
+		icon: 'img/css_icon.svg',
 	},
 	{
 		name: 'projects.js',
 		path: '/projects',
-		icon: 'js_icon.svg',
+		icon: 'img/js_icon.svg',
 	}
 ];
 
-const Explorer = ({ toggleExplorer }) => {
+const Explorer = ({ explorerStatus }) => {
 	const [folderOpen, setFolderOpen] = useState(true);
 
 	return (
 		<ResizableBox
-			width={toggleExplorer ? 0 : 200}
+			width={explorerStatus ? 200 : 0}
+			height={0}
 			maxConstraints={[800, 0]}
-			handle={<span className={toggleExplorer ?  null : "react-resizable-handle"} />}
+			handle={<span className={explorerStatus ? "react-resizable-handle" : null} />}
 		>
 			<div id={styles.explorer}>
 				<div id={styles.compositeTitle}>

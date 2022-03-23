@@ -3,22 +3,24 @@ import Explorerbar from '../components/Explorerbar';
 import Explorer from '../components/Explorer';
 import Bottombar from '../components/Bottombar';
 import Tabsbar from '../components/Tabsbar';
+import { useState, useEffect } from 'react';
 import styles from '../styles/Layout.module.scss';
-import { useState } from 'react';
-
 
 export default function Layout({ children, pageProps }) {
-	const [iconClicked, setIconClicked] = useState(true);
-	const toggleExplorer = () => {
-		setIconClicked(!iconClicked)
-	}
+	const [explorerStatus, toggleExplorer] = useState(true);
+
+	useEffect(() => {
+		if (window.innerWidth <= 800) {
+			toggleExplorer(!explorerStatus)
+		}
+	}, []);
 
 	return (
 		<>
 			<Titlebar file={pageProps.file} />
 			<div id={styles.container}>
-				<Explorerbar toggleExplorer={toggleExplorer} />
-				<Explorer toggleExplorer={iconClicked} />
+				<Explorerbar toggleExplorer={toggleExplorer} explorerStatus={explorerStatus} />
+				<Explorer explorerStatus={explorerStatus} />
 				<div>
 					<Tabsbar />
 					<main className={styles.content} >{children}</main>

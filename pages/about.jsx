@@ -1,5 +1,5 @@
-import styles from '../styles/AboutPage.module.scss';
 import Typist from 'react-typist';
+import styles from '../styles/AboutPage.module.scss';
 
 export default function AboutPage({ pageTitle }) {
 
@@ -19,7 +19,7 @@ export default function AboutPage({ pageTitle }) {
 					</p>
 				</div>
 				<div className={styles.wrapper}>
-					<img src="./photo_cv.jpg" alt="Photo" />
+					<img src="/img/photo_cv.jpg" alt="Profile picture" />
 				</div>
 			</div>
 		</div>
@@ -27,6 +27,7 @@ export default function AboutPage({ pageTitle }) {
 }
 
 export function getStaticProps() {
+	
 	return {
 		props: {
 			title: 'About',

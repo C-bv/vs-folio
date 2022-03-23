@@ -17,8 +17,7 @@
     overflow-x: hidden;
     background-color: var(--main-bg);
     z-index: 1;
-    font-family: monospace; // Change to variable !!
-    // white-space: nowrap;
+    font-family: monospace;
     
     &::after{
         content: '';
@@ -27,7 +26,7 @@
         right: -20%;
         width: 75%;
         height: 100%;
-        background-image: url('/blackmage.svg');
+        background-image: url('/img/blackmage.svg');
         background-size: cover;
         background-position: top;
         opacity: 0.1;

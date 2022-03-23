@@ -5,12 +5,13 @@ import WindowCloseIcon from "./icons/WindowCloseIcon";
 import styles from '../styles/Titlebar.module.scss';
 
 const Titlebar = ({ file }) => {
+
 	return (
 		<>
 			<div id={styles.titlebar}>
 				<div id={styles.menu}>
 					<Image
-						src="/vscode_icon.svg"
+						src="/img/vscode_icon.svg"
 						alt="VSCode Icon"
 						layout='fixed'
 						height={15}

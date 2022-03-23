@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
+@import "Package.module";
 
 *,
 *::before,
@@ -19,57 +20,9 @@ html,body, #__next {
     overflow: hidden;
 }
 
-// --------------------NODE MODULES-------------------- //
-
-// Cursor color
-.Typist .Cursor {
-    color: var(--accent-color) !important;
-    font-weight: bold;
-}
-
-.pageTypist{
-    text-transform: capitalize;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-
-@media screen and (max-width: 600px) {
-    .Typist{
-        font-size: 1.1rem;
-    }
-}
-
-// Resizable 
-
-.react-resizable {
-    position: relative;
-}
-.react-resizable-handle {
-    position: absolute;
-    width: 5px;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    cursor: w-resize;
-
-    &:hover{
-        background-color: #005cc5;
-    }
-    &:active{
-        background-color: #005cc5;
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-    .react-resizable-handle{
-        display: none;
-    }
-}
-
 @media screen and (max-width: 800px) {
+
     *{
-        cursor: none;
+        cursor: default;
     }
 }

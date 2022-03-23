@@ -4,9 +4,6 @@ import LinkedinIcon from './icons/LinkedinIcon';
 import MailIcon from './icons/MailIcon';
 import AccountIcon from './icons/AccountIcon';
 import SettingsIcon from './icons/SettingsIcon';
-import { useState } from 'react';
-
-
 import styles from '../styles/Explorerbar.module.scss';
 
 const explorerbarTopItems = [
@@ -37,23 +34,22 @@ const explorerbarBottomItems = [
 	},
 ];
 
-export default function Explorerbar({ toggleExplorer }) {
-	const iconClicked = useState(true);
-	const [isActive, setActive] = useState(false);
-
+export default function Explorerbar({ toggleExplorer, explorerStatus }) {
+	
 	return (
 		<aside id={styles.explorerbar} >
 			<div>
 				{explorerbarTopItems.map((element, index) => (
-					<div className={styles.iconContainer} key={index} >
-						<a href={element.path} target='_blank' >
-							{element.isClickable ? (
-								<element.icon
-									className={isActive ? styles.active : null}
-									onClick={() => { toggleExplorer(iconClicked); setActive(!isActive) }}
-								/>
-							) : <element.icon className={styles.icon} />}
-						</a>
+					<div className={styles.iconContainer} key={index}>
+						{element.isClickable ? (
+							<a href={element.path} target='_blank' onClick={() => { toggleExplorer(!explorerStatus) }} >
+								<element.icon className={explorerStatus ? styles.active : null} />
+							</a>
+						) :
+							<a href={element.path} target='_blank' >
+								<element.icon className={styles.icon} />
+							</a>
+						}
 					</div>
 				))}
 			</div>

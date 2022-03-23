@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Typist from 'react-typist';
-import "react-typist/dist/Typist.css";
 import tags from '../styles/CodeLayout.module.scss';
 import styles from '../styles/HomePage.module.scss';
-
 
 export default function HomePage() {
 	const [code, renderCode] = useState(true);
