@@ -17,6 +17,7 @@
         padding: 0 3rem;
         animation: fade 2.5s;
         font-family: monospace;
+        white-space: pre-wrap;
         
         :not(:last-child) {
             text-transform: uppercase;
