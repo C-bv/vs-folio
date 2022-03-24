@@ -1,6 +1,6 @@
 // --------------------NODE MODULES-------------------- //
 
-// Cursor color
+// TYPIST
 .Typist .Cursor {
     color: var(--accent-color) !important;
     font-weight: bold;
@@ -19,20 +19,9 @@
     }
 }
 
-//////////////////// RESIZABLE ////////////////////
-
-.react-resizable {
-    position: relative;
-}
-
-// Handle for explorer
-.react-resizable-handle-explorer {
-    position: absolute;
-    height: 100%;
-    width: 5px;
-    bottom: 0;
-    right: 0;
-    cursor: w-resize;
+// RESIZABLE
+.Resizable-module_handle__1mp2v[data-direction="right"]{
+    width: 8px !important;
 
     &:hover{
         background-color: #005cc5;
@@ -42,14 +31,9 @@
     }
 }
 
-// Handle for terminal
-.react-resizable-handle-terminal {
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    top: 0;
-
-    cursor: n-resize;
+.Resizable-module_handle__1mp2v[data-direction="top"]{
+    height: 4px !important;
+    top: -2px !important;
 
     &:hover{
         background-color: #005cc5;
@@ -61,7 +45,37 @@
 
 @media screen and (max-width: 700px) {
 
-    .react-resizable-handle{
+    .Resizable-module_handle__1mp2v{
         display: none;
+    }
+}
+
+// TERMINAL
+.index_editor__2tqRz{
+    height: 100% !important;
+    overflow-y: auto !important;
+    font-size: 0.9rem !important;
+    border-top: 1px solid var(--border);
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--main-bg);
+        border-left: 1px solid var(--border);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #6a737d33;
+        border-left: 1px solid var(--border);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #6a737d88;
     }
 }

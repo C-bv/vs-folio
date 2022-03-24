@@ -1,5 +1,4 @@
-#explorer{
-    min-width: max-content;
+.explorer{
     height: 100%;
     background: var(--explorer-bg);
     border-right: 1px solid var(--border);
@@ -50,7 +49,6 @@
     fill: #fff;
     cursor: pointer;
     transition: all 150ms ease;
-    
 }
 
 .folderOpen{

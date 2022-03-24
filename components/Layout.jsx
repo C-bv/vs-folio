@@ -1,34 +1,37 @@
-import TitleBar from '../components/TitleBar';
+import TitleBar from './TitleBar';
 import ExplorerBar from './ExplorerBar';
-import Explorer from '../components/Explorer';
-import TabsBar from '../components/TabsBar';
-import Terminal from '../components/Terminal';
-import BottomBar from '../components/BottomBar';
+import Explorer from './Explorer';
+import TabsBar from './TabsBar';
+import Terminal from './Terminal';
+import BottomBar from './BottomBar';
+import { TerminalContextProvider } from "react-terminal";
 import { useState, useEffect } from 'react';
 import styles from '../styles/Layout.module.scss';
 
 export default function Layout({ children, pageProps }) {
 	const [explorerStatus, toggleExplorer] = useState(true);
+	const [terminalStatus, toggleTerminal] = useState(true);
 
 	useEffect(() => {
 		if (window.innerWidth <= 800) {
 			toggleExplorer(!explorerStatus)
+			toggleTerminal(!terminalStatus)
 		}
 	}, []);
 
 	return (
-		<>
-			<TitleBar file={pageProps.file} />
+		<TerminalContextProvider>
+			<TitleBar file={pageProps.file} terminalStatus={terminalStatus} toggleTerminal={toggleTerminal} />
 			<div id={styles.container}>
-				<ExplorerBar toggleExplorer={toggleExplorer} explorerStatus={explorerStatus} />
+				<ExplorerBar explorerStatus={explorerStatus} toggleExplorer={toggleExplorer} />
 				<Explorer explorerStatus={explorerStatus} />
 				<div>
 					<TabsBar />
 					<main className={styles.content} >{children}</main>
-					<Terminal/>
+					<Terminal terminalStatus={terminalStatus} progressBarElements={pageProps.progressBarElements} />
 				</div>
 			</div>
 			<BottomBar language={pageProps.language} />
-		</>
+		</TerminalContextProvider>
 	);
 };

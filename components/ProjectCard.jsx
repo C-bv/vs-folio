@@ -2,7 +2,6 @@ import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.scss'
 
 const ProjectCard = ({ project }) => {
-    
     return (
         <div className={styles.projectContainer} >
             <a href={project.path} target='_blank' >
