@@ -2,6 +2,7 @@
     display: flex;
     height: 75%;
     color: var(--text-color);
+    white-space: nowrap;
 
     #code{
         font-size: 2rem;

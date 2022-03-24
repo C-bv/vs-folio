@@ -57,3 +57,10 @@
         grid-auto-flow: row dense
     }
 }
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}

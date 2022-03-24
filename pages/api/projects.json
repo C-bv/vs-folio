@@ -22,17 +22,5 @@
             "symfony",
             "sass"
         ]
-    },
-    {
-        "id": 3,
-        "name": "Rhuma Sug",
-        "image": "img/rhuma_sug.png",
-        "description": "An apple mobile which is nothing like apple",
-        "path": "https://github.com/C-bv/rhuma_sug_symfony",
-        "tags": [
-            "php", 
-            "symfony",
-            "javascript"
-        ]
     }
 ]

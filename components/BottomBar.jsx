@@ -4,9 +4,9 @@ import BellIcon from './icons/BellIcon';
 import SyncIcon from './icons/SyncIcon';
 import SourceControlIcon from './icons/SourceControlIcon';
 import CodeIcon from './icons/CodeIcon';
-import styles from '../styles/Bottombar.module.scss';
+import styles from '../styles/BottomBar.module.scss';
 
-const Bottombar = ({ language }) => {
+const BottomBar = ({ language }) => {
     return (
         <div id={styles.bottombar}>
             <div className={styles.container}>
@@ -37,4 +37,4 @@ const Bottombar = ({ language }) => {
     );
 };
 
-export default Bottombar;
+export default BottomBar;

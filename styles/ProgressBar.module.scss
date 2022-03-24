@@ -1,0 +1,36 @@
+.wrapper{
+    width: 75%;
+}
+
+.progress {
+    // background-color: var(--tabs-bg);
+    height: 12px;
+    position: relative;
+
+    .progressIn{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+    
+    &::before{
+        content: "";
+        position: absolute;
+        background: #fff;
+        width: 2px;
+        height: 150%;
+        top: -25%;
+        left: -10px;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        background: #fff;
+        width: 2px;
+        height: 150%;
+        top: -25%;
+        right: -10px;
+    }
+}

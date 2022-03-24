@@ -1,7 +1,7 @@
 import Tabs from "../components/Tabs";
-import styles from '../styles/Tabsbar.module.scss';
+import styles from '../styles/TabsBar.module.scss';
 
-const Tabsbar = () => {
+const TabsBar = () => {
     
     return (
         <div className={styles.tabsbar}>
@@ -13,4 +13,4 @@ const Tabsbar = () => {
     );
 };
 
-export default Tabsbar;
+export default TabsBar;

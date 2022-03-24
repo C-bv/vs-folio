@@ -34,17 +34,16 @@ const Explorer = ({ explorerStatus }) => {
 
 	return (
 		<ResizableBox
+			// Undefined height
 			width={explorerStatus ? 200 : 0}
-			height={0}
 			maxConstraints={[800, 0]}
-			handle={<span className={explorerStatus ? "react-resizable-handle" : null} />}
+			minConstraints={[0, 0]}
+			handle={<span className={explorerStatus ? "react-resizable-handle-explorer" : null} />}
 		>
 			<div id={styles.explorer}>
 				<div id={styles.compositeTitle}>
 					<p>Explorer</p>
 					<Elipsis className={styles.icon} />
-				</div>
-				<div>
 				</div>
 				<div id={styles.content}>
 					<div id={styles.folderHeader} onClick={() => setFolderOpen(!folderOpen)}>

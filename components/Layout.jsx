@@ -1,8 +1,9 @@
-import Titlebar from '../components/Titlebar';
-import Explorerbar from '../components/Explorerbar';
+import TitleBar from '../components/TitleBar';
+import ExplorerBar from './ExplorerBar';
 import Explorer from '../components/Explorer';
-import Bottombar from '../components/Bottombar';
-import Tabsbar from '../components/Tabsbar';
+import TabsBar from '../components/TabsBar';
+import Terminal from '../components/Terminal';
+import BottomBar from '../components/BottomBar';
 import { useState, useEffect } from 'react';
 import styles from '../styles/Layout.module.scss';
 
@@ -17,16 +18,17 @@ export default function Layout({ children, pageProps }) {
 
 	return (
 		<>
-			<Titlebar file={pageProps.file} />
+			<TitleBar file={pageProps.file} />
 			<div id={styles.container}>
-				<Explorerbar toggleExplorer={toggleExplorer} explorerStatus={explorerStatus} />
+				<ExplorerBar toggleExplorer={toggleExplorer} explorerStatus={explorerStatus} />
 				<Explorer explorerStatus={explorerStatus} />
 				<div>
-					<Tabsbar />
+					<TabsBar />
 					<main className={styles.content} >{children}</main>
+					<Terminal/>
 				</div>
 			</div>
-			<Bottombar language={pageProps.language} />
+			<BottomBar language={pageProps.language} />
 		</>
 	);
 };

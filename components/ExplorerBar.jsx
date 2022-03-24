@@ -4,9 +4,9 @@ import LinkedinIcon from './icons/LinkedinIcon';
 import MailIcon from './icons/MailIcon';
 import AccountIcon from './icons/AccountIcon';
 import SettingsIcon from './icons/SettingsIcon';
-import styles from '../styles/Explorerbar.module.scss';
+import styles from '../styles/ExplorerBar.module.scss';
 
-const explorerbarTopItems = [
+const explorerBarTopItems = [
 	{
 		icon: FilesIcon,
 		isClickable: true
@@ -25,7 +25,7 @@ const explorerbarTopItems = [
 	},
 ];
 
-const explorerbarBottomItems = [
+const explorerBarBottomItems = [
 	{
 		icon: AccountIcon
 	},
@@ -34,12 +34,12 @@ const explorerbarBottomItems = [
 	},
 ];
 
-export default function Explorerbar({ toggleExplorer, explorerStatus }) {
+export default function ExplorerBar({ toggleExplorer, explorerStatus }) {
 	
 	return (
 		<aside id={styles.explorerbar} >
 			<div>
-				{explorerbarTopItems.map((element, index) => (
+				{explorerBarTopItems.map((element, index) => (
 					<div className={styles.iconContainer} key={index}>
 						{element.isClickable ? (
 							<a href={element.path} target='_blank' onClick={() => { toggleExplorer(!explorerStatus) }} >
@@ -54,7 +54,7 @@ export default function Explorerbar({ toggleExplorer, explorerStatus }) {
 				))}
 			</div>
 			<div>
-				{explorerbarBottomItems.map((element, index) => (
+				{explorerBarBottomItems.map((element, index) => (
 					<div className={styles.iconContainer} key={index}>
 						<element.icon className={styles.icon} />
 					</div>

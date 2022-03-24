@@ -19,20 +19,37 @@
     }
 }
 
-// Resizable 
+//////////////////// RESIZABLE ////////////////////
 
 .react-resizable {
     position: relative;
-    height: 100% !important;
 }
 
-.react-resizable-handle {
+// Handle for explorer
+.react-resizable-handle-explorer {
     position: absolute;
+    height: 100%;
     width: 5px;
     bottom: 0;
     right: 0;
-    height: 100%;
     cursor: w-resize;
+
+    &:hover{
+        background-color: #005cc5;
+    }
+    &:active{
+        background-color: #005cc5;
+    }
+}
+
+// Handle for terminal
+.react-resizable-handle-terminal {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 0;
+
+    cursor: n-resize;
 
     &:hover{
         background-color: #005cc5;
