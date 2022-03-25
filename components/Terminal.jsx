@@ -55,8 +55,8 @@ const Terminal = ({ terminalStatus, progressBarElements }) => {
                         <span style={{ color: '#78d08f' }}>charles@bouveret</span>
                         :
                         <span style={{ color: '#76b4f9' }}>/portfolio/vs-folio</span>
-                        $
-                    </span>
+                        $&#32;
+                        </span>
                 }
                 welcomeMessage={welcomeMessage}
                 themes={{
