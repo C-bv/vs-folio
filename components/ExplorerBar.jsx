@@ -13,7 +13,7 @@ const explorerBarTopItems = [
 	},
 	{
 		icon: GithubIcon,
-		path: 'https://github.com/C-bv',
+		path: 'https://github.com/C-bv'
 	},
 	{
 		icon: LinkedinIcon,
@@ -43,7 +43,7 @@ export default function ExplorerBar({ toggleExplorer, explorerStatus }) {
 					<div className={styles.iconContainer} key={index}>
 						{element.isClickable ? (
 							<a href={element.path} target='_blank' onClick={() => { toggleExplorer(!explorerStatus) }} >
-								<element.icon className={explorerStatus ? styles.active : null} />
+								<element.icon className={styles.active} />
 							</a>
 						) :
 							<a href={element.path} target='_blank' >

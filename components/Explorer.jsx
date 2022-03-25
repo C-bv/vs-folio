@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Elipsis from './icons/Elipsis';
-import ChevronRight from './icons/ChevronRight'
 import { useState } from 'react';
 import { Resizable } from 'react-resizable-element';
+import Elipsis from './icons/Elipsis';
+import ChevronRight from './icons/ChevronRight'
 import styles from '../styles/Explorer.module.scss';
 
 const explorerElements = [
@@ -38,7 +38,6 @@ const Explorer = ({ explorerStatus }) => {
 			maxSize={800}
 			className={styles.explorer}
 			style={explorerStatus ? { width: '200px' } : { width: '0px' }}
-			resizable={explorerStatus ? true : false}
 		>
 			<div id={styles.compositeTitle}>
 				<p>Explorer</p>

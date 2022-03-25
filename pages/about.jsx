@@ -33,33 +33,7 @@ export async function getStaticProps() {
 			title: 'About',
 			file: 'about.html',
 			language: 'HTML',
-			pageTitle: 'About me',
-			progressBarElements: [
-				{
-					name: 'HTML',
-					value: 20,
-					image: 'shields/html.svg',
-					color: '#E34F26'
-				},
-				{
-					name: 'CSS',
-					value: 30,
-					image: 'shields/css.svg',
-					color: '#1572B6'
-				},
-				{
-					name: 'Javascript',
-					value: 80,
-					image: 'shields/javascript.svg',
-					color: '#F7DF1E'
-				},
-				{
-					name: 'React',
-					value: 100,
-					image: 'shields/react.svg',
-					color: '#61DAFB'
-				}
-			]
+			pageTitle: 'About me'
 		}
 	};
 }
