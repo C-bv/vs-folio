@@ -78,4 +78,15 @@
     &::-webkit-scrollbar-thumb:hover {
         background: #6a737d88;
     }
+
+    .index_caretAfter__2B8sk{
+        height: 18px !important;
+        background: #76b4f9 !important;
+    }
+    // disable mobile text input
+    .index_lineText__2Poex{
+        input{
+            display: none
+        }
+    }
 }

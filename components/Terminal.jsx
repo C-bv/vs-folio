@@ -12,29 +12,31 @@ const Terminal = ({ terminalStatus, progressBarElements }) => {
     )
 
     const commands = {
-        help: (
+        'help': (
             <span>
-                <span>Available:</span><br /><br />
-
-                <span>VARIABLES</span><br />
-                <span style={{ marginLeft: "20px" }}><strong>bony.about</strong> -- know more about me</span><br />
-                <span style={{ marginLeft: "20px" }}><strong>bony.resume</strong> -- want to have a look at my resume?</span><br /><br />
-
-                <span>FUNCTIONS</span><br />
-                {/* <span style={{ marginLeft: "20px" }}><strong>bony.experience()</strong> -> float</span><br />
-                <span style={{ marginLeft: "40px" }}>returns the total years of working experience</span><br />
-                <span style={{ marginLeft: "20px" }}><strong>bony.toggle_theme()</strong> -> None</span><br />
-                <span style={{ marginLeft: "40px" }}>toggle the website's theme</span><br />
-                <span style={{ marginLeft: "20px" }}><strong>bony.audio()</strong> -> Tracks[]</span><br />
-                <span style={{ marginLeft: "40px" }}>check my playlist on spotify</span> */}
+                <span style={{ fontWeight: "bold" }}>Available commands:</span><br />
+                &nbsp;&nbsp;<span><strong>charles<span className={styles.variable}>.resume</span></strong> --link to download my cv</span><br />
+                &nbsp;&nbsp;<span><strong>charles<span className={styles.variable}>.skills</span></strong> --languages competences</span><br />
+                &nbsp;&nbsp;<span><strong>clear</strong> --clear the console</span><br />
+                <br />
+                <span style={{ fontWeight: "bold" }}>General:</span><br />
+                &nbsp;&nbsp;<span>Click 'Terminal' on the  titlebar to toggle the terminal.</span><br />
+                &nbsp;&nbsp;<span>Click the file icon on the top left window to toggle the explorer.</span><br />
+                &nbsp;&nbsp;<span>You can resize the explorer and terminal by dragging the corresponding border.</span><br />
             </span>
         ),
-        skills: (
+        'charles.resume': (
             <span>
+                <a href="pdf\CV-Charles Bouveret.pdf" target="_blank">Download my resume</a>
+                (french version)
+            </span>
+        ),
+        'charles.skills': (
+            <>
                 {progressBarElements.map((element) => (
                     <ProgressBar element={element} />
                 ))}
-            </span>
+            </>
         )
     };
 
@@ -66,11 +68,6 @@ const Terminal = ({ terminalStatus, progressBarElements }) => {
                 theme="vscode"
                 errorMessage={'command not found'}
             />
-              {/* <span>
-                {progressBarElements.map((element) => (
-                    <ProgressBar element={element} />
-                ))}
-            </span> */}
         </Resizable>
     );
 };
