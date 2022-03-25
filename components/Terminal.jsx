@@ -15,9 +15,9 @@ const Terminal = ({ terminalStatus, progressBarElements }) => {
         'help': (
             <span>
                 <span style={{ fontWeight: "bold" }}>Available commands:</span><br />
-                &nbsp;&nbsp;<span><strong>charles<span className={styles.variable}>.resume</span></strong> --link to download my cv</span><br />
-                &nbsp;&nbsp;<span><strong>charles<span className={styles.variable}>.skills</span></strong> --languages competences</span><br />
-                &nbsp;&nbsp;<span><strong>clear</strong> --clear the console</span><br />
+                &nbsp;&nbsp;<span><span className={styles.variable}>resume</span> --link to download my cv</span><br />
+                &nbsp;&nbsp;<span><span className={styles.variable}>skills</span> --languages competences</span><br />
+                &nbsp;&nbsp;<span><span className={styles.variable}>clear</span> --clear the console</span><br />
                 <br />
                 <span style={{ fontWeight: "bold" }}>General:</span><br />
                 &nbsp;&nbsp;<span>Click 'Terminal' on the  titlebar to toggle the terminal.</span><br />
@@ -25,13 +25,13 @@ const Terminal = ({ terminalStatus, progressBarElements }) => {
                 &nbsp;&nbsp;<span>You can resize the explorer and terminal by dragging the corresponding border.</span><br />
             </span>
         ),
-        'charles.resume': (
+        'resume': (
             <span>
                 <a href="pdf\CV-Charles Bouveret.pdf" target="_blank">Download my resume</a>
                 (french version)
             </span>
         ),
-        'charles.skills': (
+        'skills': (
             <>
                 {progressBarElements.map((element) => (
                     <ProgressBar element={element} />
