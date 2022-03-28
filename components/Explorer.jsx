@@ -69,7 +69,6 @@ const Explorer = ({ explorerStatus }) => {
 					))}
 				</div>
 			</div>
-
 		</Resizable>
 	);
 };

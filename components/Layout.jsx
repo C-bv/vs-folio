@@ -2,6 +2,7 @@ import TitleBar from './TitleBar';
 import ExplorerBar from './ExplorerBar';
 import Explorer from './Explorer';
 import TabsBar from './TabsBar';
+import Resizer from './Resizer';
 import Terminal from './Terminal';
 import BottomBar from './BottomBar';
 import { TerminalContextProvider } from "react-terminal";
@@ -11,9 +12,7 @@ import styles from '../styles/Layout.module.scss';
 
 
 export default function Layout({ children, pageProps }) {
-	
 	const progressBarElements = getProgressBarElements();
-
 	const [explorerStatus, toggleExplorer] = useState(true);
 	const [terminalStatus, toggleTerminal] = useState(true);
 
@@ -41,16 +40,19 @@ export default function Layout({ children, pageProps }) {
 				/>
 				<div>
 					<TabsBar />
-					<main className={styles.content} >{children}</main>
-					<Terminal
-						terminalStatus={terminalStatus}
-						progressBarElements={progressBarElements}
-					/>
+					<div className={styles.mainContainer}>
+						<main className={styles.content} >{children}</main>
+						<Resizer>
+							<Terminal
+								progressBarElements={progressBarElements}
+							/>
+						</Resizer>
+					</div>
 				</div>
 			</div>
 			<BottomBar
 				language={pageProps.language}
 			/>
-		</TerminalContextProvider>
+		</TerminalContextProvider >
 	);
 };
