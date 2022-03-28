@@ -7,12 +7,10 @@ import Terminal from './Terminal';
 import BottomBar from './BottomBar';
 import { TerminalContextProvider } from "react-terminal";
 import { useState, useEffect } from 'react';
-import { getProgressBarElements } from '/pages/api/progressBarElements.js';
 import styles from '../styles/Layout.module.scss';
 
 
 export default function Layout({ children, pageProps }) {
-	const progressBarElements = getProgressBarElements();
 	const [explorerStatus, toggleExplorer] = useState(true);
 	const [terminalStatus, toggleTerminal] = useState(true);
 
@@ -27,8 +25,6 @@ export default function Layout({ children, pageProps }) {
 		<TerminalContextProvider>
 			<TitleBar
 				file={pageProps.file}
-				terminalStatus={terminalStatus}
-				toggleTerminal={toggleTerminal}
 			/>
 			<div id={styles.container}>
 				<ExplorerBar
@@ -42,11 +38,7 @@ export default function Layout({ children, pageProps }) {
 					<TabsBar />
 					<div className={styles.mainContainer}>
 						<main className={styles.content} >{children}</main>
-						<Resizer>
-							<Terminal
-								progressBarElements={progressBarElements}
-							/>
-						</Resizer>
+						<Resizer />
 					</div>
 				</div>
 			</div>

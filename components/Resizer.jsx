@@ -1,32 +1,45 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import Terminal from './Terminal';
+import { getProgressBarElements } from '/pages/api/progressBarElements.js';
 import styles from '../styles/Resizer.module.scss';
-export default function Resizer({ terminalStatus, toggleTerminal }) {
+
+export default function Resizer({ terminalStatus }) {
+    const progressBarElements = getProgressBarElements();
 
     useEffect(() => {
-        const container = document.querySelector('#Layout_container__z4qWC > div:nth-child(3) > div.Layout_mainContainer__5WZfx'),
-            code = document.querySelector('#Layout_container__z4qWC > div:nth-child(3) > div.Layout_mainContainer__5WZfx > main'),
-            terminal = document.querySelector('#Layout_container__z4qWC > div:nth-child(3) > div.Layout_mainContainer__5WZfx > div'),
-            handle = document.querySelector('#Layout_container__z4qWC > div:nth-child(3) > div.Layout_mainContainer__5WZfx > div > span'),
-            terminalBaseHeight = terminal.offsetHeight;
+
+        const mainContainer = document.querySelector('.Layout_mainContainer__5WZfx'),
+            code = document.querySelector('main'),
+            terminal = document.querySelector('#resizer'),
+            handle = document.querySelector('.Resizer_handle__V8LEA'),
+            terminalBaseHeight = terminal.offsetHeight,
+            minimum_size = 70,
+            maximum_size = mainContainer.offsetHeight;
+
+        let original_height = 0;
+        let original_y = 0;
+        let original_mouse_y = 0;
 
         terminal.style.height = terminalBaseHeight + 'px';
-        code.style.height = (container.offsetHeight - terminalBaseHeight) + 'px';
+        code.style.height = (mainContainer.offsetHeight - terminalBaseHeight) + 'px';
         terminal.style.top = code.style.height;
 
         handle.addEventListener('mousedown', function (e) {
             e.preventDefault()
+            original_height = parseFloat(getComputedStyle(code, null).getPropertyValue('height').replace('px', ''));
+            original_y = code.getBoundingClientRect().top;
+            original_mouse_y = e.pageY;
             window.addEventListener('mousemove', resize)
             window.addEventListener('mouseup', stopResize)
         })
 
         function resize(e) {
-            if (terminal.offsetHeight > 65) {
+            const height = original_height + (e.pageY - original_mouse_y)
+            if (height >= minimum_size && height <= maximum_size) {
+                console.log(height);
                 code.style.height = e.pageY - 65 + 'px';
                 terminal.style.top = e.pageY - 65 + 'px';
-                terminal.style.height = (container.offsetHeight - e.pageY) + 65 + 'px';
-            } else {
-                stopResize()
-                toggleTerminal(!terminalStatus)
+                terminal.style.height = (mainContainer.offsetHeight - e.pageY) + 65 + 'px';;
             }
         }
 
@@ -37,8 +50,11 @@ export default function Resizer({ terminalStatus, toggleTerminal }) {
 
 
     return (
-        <div style={{ width: '100%', height: '200px' }}>
+        <div id='resizer' style={{ width: '100%', height: '200px' }}>
             <span className={styles.handle}></span>
+            <Terminal
+                progressBarElements={progressBarElements}
+            />
         </div>
     );
 }
