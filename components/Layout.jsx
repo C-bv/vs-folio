@@ -1,19 +1,24 @@
+import { useState, useEffect } from 'react';
+import { TerminalContextProvider } from "react-terminal";
 import TitleBar from './TitleBar';
 import ExplorerBar from './ExplorerBar';
 import Explorer from './Explorer';
 import TabsBar from './TabsBar';
+<<<<<<< HEAD
 import Terminal from './Terminal';
+=======
+import Resizer from './Resizer';
+>>>>>>> Final
 import BottomBar from './BottomBar';
-import { TerminalContextProvider } from "react-terminal";
-import { useState, useEffect } from 'react';
-import { getProgressBarElements } from '/pages/api/progressBarElements.js';
 import styles from '../styles/Layout.module.scss';
 
-
 export default function Layout({ children, pageProps }) {
+<<<<<<< HEAD
 	
 	const progressBarElements = getProgressBarElements();
 
+=======
+>>>>>>> Final
 	const [explorerStatus, toggleExplorer] = useState(true);
 	const [terminalStatus, toggleTerminal] = useState(true);
 
@@ -41,11 +46,25 @@ export default function Layout({ children, pageProps }) {
 				/>
 				<div>
 					<TabsBar />
+<<<<<<< HEAD
 					<main className={styles.content} >{children}</main>
 					<Terminal
 						terminalStatus={terminalStatus}
 						progressBarElements={progressBarElements}
 					/>
+=======
+					<div className={styles.mainContainer}>
+						<main className={styles.content}
+							style={terminalStatus ? { height: '70%' } : { height: '100%' }}
+						>
+							{children}
+						</main>
+						<Resizer
+							terminalStatus={terminalStatus}
+							toggleTerminal={toggleTerminal}
+						/>
+					</div>
+>>>>>>> Final
 				</div>
 			</div>
 			<BottomBar

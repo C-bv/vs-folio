@@ -7,7 +7,7 @@ export default function ErrorPage() {
 	);
 }
 
-export function getStaticProps() {
+export async function getStaticProps() {
 	
 	return {
 		props: {

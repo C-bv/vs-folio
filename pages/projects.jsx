@@ -1,9 +1,9 @@
-import ProjectCard from '../components/ProjectCard.jsx'
-import { getProjects } from './api/projects';
 import Typist from 'react-typist';
+import { getProjects } from './api/projects';
+import ProjectCard from '../components/ProjectCard.jsx'
 import styles from '../styles/ProjectsPage.module.scss'
 
-const ProjectsPage = ({ projects, pageTitle }) => {
+export default function ProjectsPage({ projects, pageTitle }) {
 
 	return (
 		<div className={styles.pageContainer}>
@@ -25,10 +25,8 @@ export async function getStaticProps() {
 			title: 'Projects',
 			file: 'projects.js',
 			language: 'JavaScript',
-			pageTitle: "Projects I've worked on",
+			pageTitle: `Projects I've worked on`,
 			projects
 		}
 	};
 }
-
-export default ProjectsPage;

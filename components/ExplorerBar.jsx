@@ -34,8 +34,8 @@ const explorerBarBottomItems = [
 	},
 ];
 
-export default function ExplorerBar({ toggleExplorer, explorerStatus }) {
-	
+const ExplorerBar = ({ toggleExplorer, explorerStatus }) => {
+
 	return (
 		<aside id={styles.explorerbar} >
 			<div>
@@ -63,3 +63,5 @@ export default function ExplorerBar({ toggleExplorer, explorerStatus }) {
 		</aside>
 	);
 };
+
+export default ExplorerBar;

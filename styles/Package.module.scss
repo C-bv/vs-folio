@@ -1,6 +1,6 @@
 // --------------------NODE MODULES-------------------- //
 
-// TYPIST
+// TYPIST-------------------- //
 .Typist .Cursor {
     color: var(--accent-color) !important;
     font-weight: bold;
@@ -19,13 +19,14 @@
     }
 }
 
-// RESIZABLE
+// RESIZABLE-------------------- //
 .Resizable-module_handle__1mp2v[data-direction="right"]{
     width: 8px !important;
 
     &:hover{
         background-color: #005cc5;
     }
+
     &:active{
         background-color: #005cc5;
     }
@@ -38,28 +39,29 @@
     &:hover{
         background-color: #005cc5;
     }
+
     &:active{
         background-color: #005cc5;
     }
 }
 
 @media screen and (max-width: 700px) {
-
-    .Resizable-module_handle__1mp2v{
+    .Resizable-module_handle__1mp2v, .Resizer_handle__V8LEA{
         display: none;
     }
 }
 
-// TERMINAL
+// TERMINAL-------------------- //
 .index_editor__2tqRz{
     height: 100% !important;
     overflow-y: auto !important;
     font-size: 0.9rem !important;
-    border-top: 1px solid var(--border);
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
+    border-top: 1px solid var(--border);
+    cursor: text;
 
     &::-webkit-scrollbar {
         width: 12px;
@@ -80,7 +82,8 @@
     }
 
     .index_caretAfter__2B8sk{
-        height: 18px !important;
+        height: 20px !important;
+        top: 0px !important;
         background: #76b4f9 !important;
     }
     // disable mobile text input

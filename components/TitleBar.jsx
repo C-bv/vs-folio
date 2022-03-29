@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import WindowMinimizeIcon from "./icons/WindowMinimizeIcon";
-import WindowMaximizeIcon from "./icons/WindowMaximizeIcon";
-import WindowCloseIcon from "./icons/WindowCloseIcon";
+import WindowMinimizeIcon from './icons/WindowMinimizeIcon';
+import WindowMaximizeIcon from './icons/WindowMaximizeIcon';
+import WindowCloseIcon from './icons/WindowCloseIcon';
 import styles from '../styles/TitleBar.module.scss';
 
 const TitleBar = ({ file, terminalStatus, toggleTerminal }) => {
@@ -10,8 +10,8 @@ const TitleBar = ({ file, terminalStatus, toggleTerminal }) => {
 		<div id={styles.titlebar}>
 			<div id={styles.menu}>
 				<Image
-					src="/img/vscode_icon.svg"
-					alt="VSCode Icon"
+					src='/img/vscode_icon.svg'
+					alt='VSCode Icon'
 					layout='fixed'
 					height={15}
 					width={15}
@@ -23,7 +23,7 @@ const TitleBar = ({ file, terminalStatus, toggleTerminal }) => {
 				<span>Run</span>
 				<span
 					onClick={() => { toggleTerminal(!terminalStatus) }}
-					style={{cursor: 'pointer'}}
+					style={{ cursor: 'pointer' }}
 				>
 					Terminal
 				</span>
