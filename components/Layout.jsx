@@ -1,14 +1,12 @@
+import { useState, useEffect } from 'react';
+import { TerminalContextProvider } from "react-terminal";
 import TitleBar from './TitleBar';
 import ExplorerBar from './ExplorerBar';
 import Explorer from './Explorer';
 import TabsBar from './TabsBar';
 import Resizer from './Resizer';
-import Terminal from './Terminal';
 import BottomBar from './BottomBar';
-import { TerminalContextProvider } from "react-terminal";
-import { useState, useEffect } from 'react';
 import styles from '../styles/Layout.module.scss';
-
 
 export default function Layout({ children, pageProps }) {
 	const [explorerStatus, toggleExplorer] = useState(true);
@@ -25,6 +23,8 @@ export default function Layout({ children, pageProps }) {
 		<TerminalContextProvider>
 			<TitleBar
 				file={pageProps.file}
+				terminalStatus={terminalStatus}
+				toggleTerminal={toggleTerminal}
 			/>
 			<div id={styles.container}>
 				<ExplorerBar
@@ -37,8 +37,15 @@ export default function Layout({ children, pageProps }) {
 				<div>
 					<TabsBar />
 					<div className={styles.mainContainer}>
-						<main className={styles.content} >{children}</main>
-						<Resizer />
+						<main className={styles.content}
+							style={terminalStatus ? { height: '70%' } : { height: '100%' }}
+						>
+							{children}
+						</main>
+						<Resizer
+							terminalStatus={terminalStatus}
+							toggleTerminal={toggleTerminal}
+						/>
 					</div>
 				</div>
 			</div>

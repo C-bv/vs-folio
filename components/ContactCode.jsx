@@ -19,6 +19,7 @@ const contactLinks = [
 ];
 
 const ContactCode = () => {
+	
 	return (
 		<div id={styles.code}>
 			<p className={styles.line}>
@@ -27,7 +28,7 @@ const ContactCode = () => {
 			{contactLinks.map((item, index) => (
 				<span className={styles.line} key={index}>
 					&nbsp;&nbsp;&nbsp;{item.social}:&nbsp;
-					<a href={item.href} target="_blank">
+					<a href={item.href} target='_blank'>
 						{item.link}
 					</a>
 					;

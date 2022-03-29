@@ -7,6 +7,7 @@ import CodeIcon from './icons/CodeIcon';
 import styles from '../styles/BottomBar.module.scss';
 
 const BottomBar = ({ language }) => {
+    
     return (
         <div id={styles.bottombar}>
             <div className={styles.container}>

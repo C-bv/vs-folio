@@ -1,6 +1,7 @@
 import styles from '../styles/ProgressBar.module.scss';
 
 const ProgressBar = ({ element }) => {
+
 	return (
 		<div style={{ marginLeft: '10px' }}>
 			<div className={styles.name}>{`~ ${element.name}`}</div>
