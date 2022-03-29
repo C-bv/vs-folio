@@ -8,40 +8,12 @@
 
     >div:last-child{
         position: relative;
-<<<<<<< HEAD
-=======
         height: calc(100% - 35px);
         display: flex;
         flex-direction: column;
->>>>>>> Final
         overflow: hidden;
-    }
-}
-
-<<<<<<< HEAD
-.content{
-    position: relative;
-    height: 100%;
-    padding: 2rem;
-    overflow-x: hidden;
-    background-color: var(--main-bg);
-    z-index: 1;
-    font-family: monospace;
     
-    &::after{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: -20%;
-        width: 75%;
-        height: 100%;
-        background-image: url('/img/blackmage.svg');
-        background-size: cover;
-        background-position: top;
-        opacity: 0.1;
-        z-index: -1;
-    }
-=======
+
         // &::after{
         //     content: '';
         //     position: absolute;
@@ -73,31 +45,15 @@
                 background: var(--main-bg);
                 border-left: 1px solid var(--border);
             }
->>>>>>> Final
 
-    &::-webkit-scrollbar {
-        width: 15px;
-    }
+            &::-webkit-scrollbar {
+                width: 15px;
+            }
 
-<<<<<<< HEAD
-    &::-webkit-scrollbar-track {
-        background: var(--main-bg);
-        border-left: 1px solid var(--border);
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #6a737d33;
-        border-left: 1px solid var(--border);
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-        background: #6a737d88;
-=======
             &::-webkit-scrollbar-thumb:hover {
                 background: #6a737d88;
             }
         }
->>>>>>> Final
     }
 }
 

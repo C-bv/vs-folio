@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import { Resizable } from 'react-resizable-element';
-import { ReactTerminal } from "react-terminal";
-=======
 import { ReactTerminal } from 'react-terminal';
->>>>>>> Final
 import ProgressBar from '../components/ProgressBar';
 import styles from '../styles/Terminal.module.scss';
 
@@ -45,36 +40,6 @@ const Terminal = ({ terminalStatus, progressBarElements }) => {
     };
 
     return (
-<<<<<<< HEAD
-        <Resizable
-            style={terminalStatus ? { height: '225px' } : { height: '0px' }}
-            direction="top"
-            maxSize={500}
-            className={styles.terminalResizable}
-        >
-            <ReactTerminal
-                showControlBar={false}
-                commands={commands}
-                prompt={
-                    <span style={{ color: '#d1d5da', fontWeight: 'bold' }} >
-                        <span style={{ color: '#78d08f' }}>charles@bouveret</span>
-                        :
-                        <span style={{ color: '#76b4f9' }}>/portfolio/vs-folio</span>
-                        $&#32;
-                        </span>
-                }
-                welcomeMessage={welcomeMessage}
-                themes={{
-                    vscode: {
-                        themeBGColor: '#1f2428',
-                        themeColor: "#d1d5da",
-                    }
-                }}
-                theme="vscode"
-                errorMessage={'command not found'}
-            />
-        </Resizable>
-=======
         <ReactTerminal
             showControlBar={false}
             commands={commands}
@@ -96,7 +61,6 @@ const Terminal = ({ terminalStatus, progressBarElements }) => {
             theme='vscode'
             errorMessage={'command not found'}
         />
->>>>>>> Final
     );
 };
 
