@@ -1,6 +1,11 @@
 .terminalResizable{
+    position: absolute !important;
     width: 100%;
     bottom: 0;
+<<<<<<< HEAD
+=======
+    z-index: 2;
+>>>>>>> main
     cursor: text;
     
     .variable{

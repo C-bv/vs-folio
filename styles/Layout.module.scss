@@ -2,17 +2,23 @@
     height: calc(100% - 30px - 22.5px);
     display: grid; 
     grid-template-columns: auto auto 1fr ; 
-    grid-template-rows: 100%;
+    grid-template-rows: auto;
     gap: 0px 0px;
     
 
-    .mainContainer{
+    >div:last-child{
         position: relative;
+<<<<<<< HEAD
         height: calc(100% - 35px);
         display: flex;
         flex-direction: column;
+=======
+>>>>>>> main
         overflow: hidden;
+    }
+}
 
+<<<<<<< HEAD
         // &::after{
         //     content: '';
         //     position: absolute;
@@ -44,16 +50,54 @@
                 background: var(--main-bg);
                 border-left: 1px solid var(--border);
             }
+=======
+.content{
+    position: relative;
+    height: 100%;
+    padding: 2rem;
+    overflow-x: hidden;
+    background-color: var(--main-bg);
+    z-index: 1;
+    font-family: monospace;
+    
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -20%;
+        width: 75%;
+        height: 100%;
+        background-image: url('/img/blackmage.svg');
+        background-size: cover;
+        background-position: top;
+        opacity: 0.1;
+        z-index: -1;
+    }
+>>>>>>> main
 
-            &::-webkit-scrollbar-thumb {
-                background: #6a737d33;
-                border-left: 1px solid var(--border);
-            }
+    &::-webkit-scrollbar {
+        width: 15px;
+    }
 
+<<<<<<< HEAD
             &::-webkit-scrollbar-thumb:hover {
                 background: #6a737d88;
             }
         }
+=======
+    &::-webkit-scrollbar-track {
+        background: var(--main-bg);
+        border-left: 1px solid var(--border);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #6a737d33;
+        border-left: 1px solid var(--border);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #6a737d88;
+>>>>>>> main
     }
 }
 

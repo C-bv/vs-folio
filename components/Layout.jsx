@@ -4,11 +4,21 @@ import TitleBar from './TitleBar';
 import ExplorerBar from './ExplorerBar';
 import Explorer from './Explorer';
 import TabsBar from './TabsBar';
+<<<<<<< HEAD
 import Resizer from './Resizer';
+=======
+import Terminal from './Terminal';
+>>>>>>> main
 import BottomBar from './BottomBar';
 import styles from '../styles/Layout.module.scss';
 
 export default function Layout({ children, pageProps }) {
+<<<<<<< HEAD
+=======
+	
+	const progressBarElements = getProgressBarElements();
+
+>>>>>>> main
 	const [explorerStatus, toggleExplorer] = useState(true);
 	const [terminalStatus, toggleTerminal] = useState(true);
 
@@ -36,6 +46,7 @@ export default function Layout({ children, pageProps }) {
 				/>
 				<div>
 					<TabsBar />
+<<<<<<< HEAD
 					<div className={styles.mainContainer}>
 						<main className={styles.content}
 							style={terminalStatus ? { height: '70%' } : { height: '100%' }}
@@ -47,11 +58,18 @@ export default function Layout({ children, pageProps }) {
 							toggleTerminal={toggleTerminal}
 						/>
 					</div>
+=======
+					<main className={styles.content} >{children}</main>
+					<Terminal
+						terminalStatus={terminalStatus}
+						progressBarElements={progressBarElements}
+					/>
+>>>>>>> main
 				</div>
 			</div>
 			<BottomBar
 				language={pageProps.language}
 			/>
-		</TerminalContextProvider >
+		</TerminalContextProvider>
 	);
 };
