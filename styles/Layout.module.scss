@@ -2,17 +2,16 @@
     height: calc(100% - 30px - 22.5px);
     display: grid; 
     grid-template-columns: auto auto 1fr ; 
-    grid-template-rows: auto;
+    grid-template-rows: 100%;
     gap: 0px 0px;
     
 
-    >div:last-child{
+    .mainContainer{
         position: relative;
         height: calc(100% - 35px);
         display: flex;
         flex-direction: column;
         overflow: hidden;
-    
 
         // &::after{
         //     content: '';
@@ -46,8 +45,9 @@
                 border-left: 1px solid var(--border);
             }
 
-            &::-webkit-scrollbar {
-                width: 15px;
+            &::-webkit-scrollbar-thumb {
+                background: #6a737d33;
+                border-left: 1px solid var(--border);
             }
 
             &::-webkit-scrollbar-thumb:hover {
