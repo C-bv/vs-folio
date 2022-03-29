@@ -16,6 +16,7 @@
     &:hover{
         background-color: var(--tabs-active-bg);
     }
+    
     &.active{
         border-bottom: 0;
         background-color: var(--tabs-active-bg);
@@ -25,7 +26,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 2px;
+            height: 1px;
             width: 100%;
             background-color: var(--accent-color);
         }

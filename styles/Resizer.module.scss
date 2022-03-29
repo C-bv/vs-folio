@@ -6,9 +6,9 @@
         width: 100%;
         position: absolute;
         height: 4px;
-        top: -4px;
-        cursor: n-resize;
+        top: -2px;
         z-index: 2;
+        cursor: n-resize;
 
         &:hover{
             background-color: #005cc5;

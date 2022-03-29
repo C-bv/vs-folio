@@ -34,10 +34,10 @@ export default function Layout({ children, pageProps }) {
 				<Explorer
 					explorerStatus={explorerStatus}
 				/>
-				<div>
+				<div id={styles.content}>
 					<TabsBar />
 					<div className={styles.mainContainer}>
-						<main className={styles.content}
+						<main id={styles.main}
 							style={terminalStatus ? { height: '70%' } : { height: '100%' }}
 						>
 							{children}

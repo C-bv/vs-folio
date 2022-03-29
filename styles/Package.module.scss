@@ -21,20 +21,9 @@
 
 // RESIZABLE-------------------- //
 .Resizable-module_handle__1mp2v[data-direction="right"]{
-    width: 8px !important;
-
-    &:hover{
-        background-color: #005cc5;
-    }
-
-    &:active{
-        background-color: #005cc5;
-    }
-}
-
-.Resizable-module_handle__1mp2v[data-direction="top"]{
-    height: 4px !important;
-    top: -2px !important;
+    z-index: 2;
+    width: 4px !important;
+    right: -2px !important;;
 
     &:hover{
         background-color: #005cc5;
