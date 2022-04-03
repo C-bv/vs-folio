@@ -4,7 +4,7 @@ const contactLinks = [
 	{
 		social: 'email',
 		link: 'charles.bouveret@outlook.fr',
-		href: 'mailto:charles.bouveret@outlook.com?subject=Email from portofolio',
+		href: 'mailto:charles.bouveret@outlook.com',
 	},
 	{
 		social: 'linkedin',

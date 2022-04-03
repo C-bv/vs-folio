@@ -1,10 +1,8 @@
 import { useEffect } from 'react';
-import { getProgressBarElements } from '/pages/api/progressBarElements.js';
 import Terminal from './Terminal';
 import styles from '../styles/Resizer.module.scss';
 
 const Resizer = ({ terminalStatus, toggleTerminal }) => {
-    const progressBarElements = getProgressBarElements();
 
     useEffect(() => {
 
@@ -49,7 +47,7 @@ const Resizer = ({ terminalStatus, toggleTerminal }) => {
             style={terminalStatus ? { height: '30%' } : { height: '0%' }}
         >
             <span className={styles.handle} style={terminalStatus ? null : { display: 'none' }}></span>
-            <Terminal progressBarElements={progressBarElements} />
+            <Terminal />
         </div>
     );
 }

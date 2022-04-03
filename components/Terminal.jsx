@@ -1,8 +1,11 @@
 import { ReactTerminal } from 'react-terminal';
 import ProgressBar from '../components/ProgressBar';
+import { getProgressBarElements } from '/pages/api/progressBarElements.js';
 import styles from '../styles/Terminal.module.scss';
 
-const Terminal = ({ terminalStatus, progressBarElements }) => {
+const progressBarElements = getProgressBarElements();
+
+const Terminal = () => {
 
     const welcomeMessage = (
         <span>
