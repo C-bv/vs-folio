@@ -3,8 +3,8 @@ import styles from '../styles/CodeLayout.module.scss';
 const contactLinks = [
 	{
 		social: 'email',
-		link: 'charles.bouveret@outlook.fr',
-		href: 'mailto:charles.bouveret@outlook.com',
+		link: 'contact@c-bv.dev',
+		href: 'mailto:contact@c-bv.dev',
 	},
 	{
 		social: 'linkedin',
@@ -13,8 +13,8 @@ const contactLinks = [
 	},
 	{
 		social: 'github',
-		link: 'C-bv',
-		href: 'https://github.com/C-bv',
+		link: 'c-bv',
+		href: 'https://github.com/c-bv',
 	}
 ];
 

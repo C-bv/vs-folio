@@ -13,7 +13,7 @@ const explorerBarTopItems = [
 	},
 	{
 		icon: GithubIcon,
-		path: 'https://github.com/C-bv'
+		path: 'https://github.com/c-bv'
 	},
 	{
 		icon: LinkedinIcon,
@@ -21,7 +21,7 @@ const explorerBarTopItems = [
 	},
 	{
 		icon: MailIcon,
-		path: 'mailto:charles.bouveret@outlook.com'
+		path: 'mailto:contact@c-bv.dev'
 	},
 ];
 

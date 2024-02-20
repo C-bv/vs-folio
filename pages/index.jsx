@@ -40,7 +40,7 @@ export default function HomePage() {
 
 						{/* h3 starts */}
 						&emsp;&emsp;<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;</span>h3<span className={tags.tagcolor}>&gt;</span></span>
-						<span>Junior Web developer</span>
+						<span>Fullstack developer</span>
 						<span className={tags.tagnamecolor}><span className={tags.tagcolor}>&lt;/</span>h3<span className={tags.tagcolor}>&gt;</span></span><br />
 						{/* h3 ends */}
 
@@ -55,11 +55,11 @@ export default function HomePage() {
 						<h2>Hi, my name is</h2>
 						<h1>Charles</h1>
 						<h1>Bouveret</h1>
-						<h3>Junior Web developer</h3>
+						<h3>Fullstack developer</h3>
 					</div>
 					<div id={styles.paragraphtext}>
 						{p ? (
-							<p>I'm a junior web developer based in Pau, France.</p>
+							<p>I'm a fullstack web developer based in Pau, France.</p>
 						) : null}
 					</div>
 				</div>
